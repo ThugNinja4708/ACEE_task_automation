@@ -1,0 +1,28 @@
+.file-input{
+    display: none;
+}
+
+.file-upload-button{
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 600;
+    width: auto;
+    height: 28px;
+    border: 0;
+    cursor: pointer;
+    background-color: #1362cb;
+    color:#fff;
+    border-radius: 24px;
+    padding: 0.7% 4% 0.7% 4%;
+    cursor: pointer;
+}
+
+.psm-item{
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+    align-items: center;
+    list-style-type:none;
+    margin: 10px 0;
+}
