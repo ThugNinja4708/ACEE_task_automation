@@ -42,3 +42,46 @@
 31-03-2023 14:53:07 - INFO - ENV variables ready
 31-03-2023 14:53:10 - INFO - Connected to DB
 31-03-2023 14:53:13 - INFO - Connected to DB
+31-03-2023 15:02:47 - INFO - ENV variables ready
+31-03-2023 15:02:50 - INFO - Connected to DB
+31-03-2023 15:02:52 - INFO - Connected to DB
+31-03-2023 15:02:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+31-03-2023 15:02:52 - INFO - [33mPress CTRL+C to quit[0m
+31-03-2023 15:02:52 - INFO -  * Restarting with stat
+31-03-2023 15:02:53 - INFO - ENV variables ready
+31-03-2023 15:02:56 - INFO - Connected to DB
+31-03-2023 15:02:59 - INFO - Connected to DB
+31-03-2023 15:02:59 - WARNING -  * Debugger is active!
+31-03-2023 15:02:59 - INFO -  * Debugger PIN: 977-148-731
+31-03-2023 15:05:31 - INFO -  * Detected change in 'C:\\Personal\\git ace automation\\ACEE_task_automation\\backend\\helper2.py', reloading
+31-03-2023 15:05:31 - INFO -  * Restarting with stat
+31-03-2023 15:05:32 - INFO - ENV variables ready
+31-03-2023 15:09:09 - INFO - ENV variables ready
+31-03-2023 15:09:12 - INFO - Connected to DB
+31-03-2023 15:13:13 - INFO - ENV variables ready
+31-03-2023 15:13:17 - INFO - Connected to DB
+31-03-2023 15:13:19 - INFO - Connected to DB
+31-03-2023 15:13:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+31-03-2023 15:13:19 - INFO - [33mPress CTRL+C to quit[0m
+31-03-2023 15:13:19 - INFO -  * Restarting with stat
+31-03-2023 15:13:20 - INFO - ENV variables ready
+31-03-2023 15:13:23 - INFO - Connected to DB
+31-03-2023 15:13:26 - INFO - Connected to DB
+31-03-2023 15:13:26 - WARNING -  * Debugger is active!
+31-03-2023 15:13:26 - INFO -  * Debugger PIN: 977-148-731
+31-03-2023 15:15:13 - INFO -  * Detected change in 'C:\\Personal\\git ace automation\\ACEE_task_automation\\backend\\app.py', reloading
+31-03-2023 15:15:13 - INFO -  * Restarting with stat
+31-03-2023 15:15:15 - INFO - ENV variables ready
+31-03-2023 15:15:18 - INFO - Connected to DB
+31-03-2023 15:15:20 - INFO - Connected to DB
+31-03-2023 15:15:20 - WARNING -  * Debugger is active!
+31-03-2023 15:15:20 - INFO -  * Debugger PIN: 977-148-731
+31-03-2023 15:15:21 - INFO -  * Detected change in 'C:\\Personal\\git ace automation\\ACEE_task_automation\\backend\\app.py', reloading
+31-03-2023 15:15:21 - INFO -  * Restarting with stat
+31-03-2023 15:15:23 - INFO - ENV variables ready
+31-03-2023 15:15:26 - INFO - Connected to DB
+31-03-2023 15:15:28 - INFO - Connected to DB
+31-03-2023 15:15:28 - WARNING -  * Debugger is active!
+31-03-2023 15:15:28 - INFO -  * Debugger PIN: 977-148-731

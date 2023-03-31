@@ -100,15 +100,3 @@ def db_update(task, status):
 
 
 
-async def main():
-    # Create a task for get_status coroutine
-    status_task = asyncio.create_task(get_status())
-    
-    # Create a task for do_task coroutine
-    task_task = asyncio.create_task(do_task())
-    
-    # Run the event loop until all tasks are completed
-    await asyncio.gather(status_task, task_task)
-
-if __name__ == '__main__':
-    asyncio.run(main())

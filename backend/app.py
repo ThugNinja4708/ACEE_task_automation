@@ -14,6 +14,7 @@ from collections import OrderedDict
 import helper2
 from user_class import REQUEST
 import asyncio
+import threading
 
 
 app = Flask(__name__)
@@ -72,6 +73,8 @@ def approveRequest():
     task.created_date = str(datetime.now().date())
     helper2.queueing(task)
     return "bye"
+
+
     # ############## REQUEST FORMDATA #################
     # task_id = request.form['task_id']
     # # list_task_id = [(x,) for x in list_task_id]
@@ -91,13 +94,15 @@ app.run(debug=True)
 
 ############################################## TESTING DONT USE THESE #############################
 
-# async def main():
-    
-#     app.run(debug=True)
-#     task = asyncio.create_task(helper2.get_status())
-#     await task
-#     print("ghg")
+
+def start_get_status():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(helper2.get_status())
+    print("hi")
 
 
-# if __name__ == "__main_":
-#     asyncio.run(main())
+if __name__ == '__main__':
+    get_status_thread = threading.Thread(target=start_get_status)
+    get_status_thread.start()
+    app.run()
