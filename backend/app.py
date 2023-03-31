@@ -31,18 +31,12 @@ def add_data():
     created_date = str(datetime.now().date())
 
     # if task == ipwhitelist add or remove
-    if (type_of_task == "1" or type_of_task == "2"):
+    if type_of_task in ['1', '2']:
         task_data = ','.join(request.form["task_data"])
 
     # task == ldap cert upload or psm cert
-    elif (type_of_task == "3" or type_of_task == "4"):
-        list = []
-        files = request.files.getlist('body')
-        for file in files:
-            fileName = f"{str(time.time_ns())}_{file.filename}"
-            file.save("database_files\\" + fileName)
-            list.append(fileName)
-        task_data = ",".join(list)
+    elif type_of_task in ['3', '4']:
+        task_data = upload_files(request.files.getlist('body'))
 
     try:
         with conn_pool.getconn() as conn:
@@ -89,4 +83,14 @@ def approveRequest():
 ############################################## TESTING DONT USE THESE #############################
 
 
-app.run(debug=True)
+def upload_files(files):
+    file_list = list()
+    for file in files:
+        file_name = f"{time.time_ns()}_{file.filename}"
+        file_path = os.path.join("database_files", file_name)
+        file.save(file_path)
+        file_list.append(file_name)
+    return ",".join(file_list)
+
+if __name__ == '__main__':
+    app.run(debug=True)
