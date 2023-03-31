@@ -1,0 +1,30 @@
+.approve {
+    margin-left: 25px !important;
+    background-color: #6a9bca;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+  }
+  
+  .approve:hover,
+  .approve:focus {
+    background-color: #1868b1;
+  }
+
+  .approve:disabled{
+    background-color: #c9ced2;
+    cursor: not-allowed;
+  }

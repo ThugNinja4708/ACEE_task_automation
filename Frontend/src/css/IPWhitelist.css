@@ -1,0 +1,73 @@
+
+.ipwhitelist-content{
+    padding: 10%;
+    border-radius: 15px;
+}
+
+.ip-input{
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #1868b1;
+    font-family: 'Open Sans';
+    outline: none;
+}
+
+.add-button{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}
+
+.add-button:hover{
+    cursor: pointer;
+    fill: #1868b1;
+}
+
+.remove-ip-button{
+    margin: 0 15px 0 35px;
+}
+.remove-ip-button:hover{
+    fill: #1868b1;
+}
+
+.ip-item{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #3a3a3a;
+    align-items: center !important;
+    list-style-type:none;
+    margin: 10px 0;
+}
+
+.ip-list{
+    padding-left: 3rem !important;
+    margin-top: 30px;
+    padding: 0;
+}
+.select-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0% 15%;
+}
+
+/* .cancel-button{
+    background-color: white;
+    height: 28px;
+    width: auto;
+    border: 0;
+    border-radius: 24px;
+    padding: 0% 4% 0% 4%;
+}
+
+.cancel-button:hover{
+    background-color: #e6effe;
+} */

@@ -1,0 +1,58 @@
+.file-input{
+    display: none;
+}
+.header{
+    padding: 24px 15px 17px 40px;
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.submit-button:disabled{
+    background-color: #d0d0d0;
+    color:#a3a3a3;
+    cursor: auto;
+    opacity: 1;
+}
+.rotating{
+    -webkit-animation: rotating 2s linear infinite;
+}
+.description{
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid;
+    padding-bottom: 6px;
+}
+
+.file-upload-button{
+    font-size: 14px;
+    font-weight: 600;
+    width: auto;
+    height: 28px;
+    border: 0;
+    cursor: pointer;
+    background-color: #1362cb;
+    color:#fff;
+    border-radius: 24px;
+    padding: 0.7% 4% 0.7% 4%;
+    cursor: pointer;
+}
+
+.list-item{
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: #3a3a3a;
+    align-items: center;
+    list-style-type:none;
+    margin: 10px 0;
+}
+
+.cancel-button{
+    color:#3f51b5;
+}
