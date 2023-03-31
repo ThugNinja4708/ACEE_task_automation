@@ -11,9 +11,10 @@ import time
 import logging
 from decouple import config
 from collections import OrderedDict
-from helper_functions import QUEUE
+import helper2
 from user_class import REQUEST
-gq = QUEUE()
+import asyncio
+
 
 app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -47,14 +48,14 @@ def add_data():
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
-                cursor.execute("INSERT INTO {} (customer_id, support_id, type_of_task, task_data, created_date,status) VALUES ((%s),(%s),(%s),(%s),(%s),'waiting');".format(config('DATABASE_TABLE')), (
+                cursor.execute("INSERT INTO service_requests (customer_id, support_id, type_of_task, task_data, created_date,status) VALUES ((%s),(%s),(%s),(%s),(%s),'WAITING_FOR_APPROVAL');", (
                     customer_id, support_id, type_of_task, task_data, created_date))
                 conn.commit()
             logging.info(
                 "API: /insertIntoDatabase MSG: Data added successfully")
             return {"msg": "Data added successfully"}
 
-    except Exception as error:
+    except (Exception, Error) as error:
         logging.error(
             "API: insertIntoDatabase MSG: Error while adding data to database - %s", error)
         return {"err": "Error while adding data to database"}
@@ -65,10 +66,11 @@ def approveRequest():
 
     cid = request.form['customer_id']
     tid = request.form['task_id']
-    task = REQUEST(type_of_task=1, task_data="10.10.10.10",
+    task = REQUEST(type_of_task=1, task_data="10.10.10.10", support_id=1,
                    customer_id=cid, task_id=tid, status="WAITING_FOR_APPROVAL")
-    task.approval_date = datetime.now().date()
-    gq.queueing(task)
+    task.approval_date = str(datetime.now().date())
+    task.created_date = str(datetime.now().date())
+    helper2.queueing(task)
     return "bye"
     # ############## REQUEST FORMDATA #################
     # task_id = request.form['task_id']
@@ -85,8 +87,17 @@ def approveRequest():
     # except (Exception, Error) as error:
     #     logging.error(f"API: /approveRequest MSG: Error occured while retrieving data from the database - {error}")
     #     return {"err": f"Error occured while retrieving data from the database: {error}"}
+app.run(debug=True)
 
 ############################################## TESTING DONT USE THESE #############################
 
+# async def main():
+    
+#     app.run(debug=True)
+#     task = asyncio.create_task(helper2.get_status())
+#     await task
+#     print("ghg")
 
-app.run(debug=True)
+
+# if __name__ == "__main_":
+#     asyncio.run(main())

@@ -106,8 +106,8 @@ def update_db(task):
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
-                cursor.execute("UPDATE {} SET task_id = (%s),customer_id= (%s),support_id= (%s),type_of_task= (%s),task_data,status= (%s),created_date= (%s),description= (%s),error_message= (%s),approval_date= (%s),completed_date= (%s)) ;".format(
-                    config('DATABASE_TABLE')), (task_id, customer_id, support_id, type_of_task, task_data, status, created_date, description, error_message, approval_date, completed_date))
+                cursor.execute("UPDATE {} SET customer_id= (%s),support_id= (%s),type_of_task= (%s),task_data,status= (%s),created_date= (%s),description= (%s),error_message= (%s),approval_date= (%s),completed_date= (%s)) WHERE task_id=(%s) ;".format(
+                    config('DATABASE_TABLE')), ( customer_id, support_id, type_of_task, task_data, status, created_date, description, error_message, approval_date, completed_date,task_id))
                 conn.commit()
             logging.info(
                 f"DB: Update MSG: {task.id} Data updated successfully")
