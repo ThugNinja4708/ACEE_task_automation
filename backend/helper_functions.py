@@ -31,8 +31,7 @@ class QUEUE:
                     break
 
             if general_item_in_running_queue == -1:
-                print(
-                    f"general_item_in_running_queue == -1 for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+                print(f"general_item_in_running_queue == -1 for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
                 self.running_queue.append(general_item)
                 self.general_queue.remove(general_item)
                 api_call(general_item)
@@ -79,17 +78,14 @@ class QUEUE:
 
 
 def api_call(task):
-    print(
-        f"method: api_call msg: api called for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+    print(f"method: api_call msg: api called for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
     time.sleep(5)
     task.status = "IN_PROGRESS"
-    print(
-        f"method: api_call msg: api call FINISH for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+    print(f"method: api_call msg: api call FINISH for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
 
 
 def update_db(task):
-    print(
-        f"method: update_db msg: INSIDE updatedb for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+    print(f"method: update_db msg: INSIDE updatedb for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
 
     task_id = task.task_id
     customer_id = task.customer_id
@@ -106,19 +102,15 @@ def update_db(task):
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
-                cursor.execute("UPDATE {} SET task_id = (%s),customer_id= (%s),support_id= (%s),type_of_task= (%s),task_data,status= (%s),created_date= (%s),description= (%s),error_message= (%s),approval_date= (%s),completed_date= (%s)) ;".format(
-                    config('DATABASE_TABLE')), (task_id, customer_id, support_id, type_of_task, task_data, status, created_date, description, error_message, approval_date, completed_date))
+                cursor.execute("UPDATE {} SET task_id = (%s),customer_id= (%s),support_id= (%s),type_of_task= (%s),task_data,status= (%s),created_date= (%s),description= (%s),error_message= (%s),approval_date= (%s),completed_date= (%s)) ;".format(config('DATABASE_TABLE')), (task_id, customer_id, support_id, type_of_task, task_data, status, created_date, description, error_message, approval_date, completed_date))
                 conn.commit()
-            logging.info(
-                f"DB: Update MSG: {task.id} Data updated successfully")
-            print(
-                f"method: update_db msg:  DB UPDATED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+
+            logging.info(f"DB: Update MSG: {task.id} Data updated successfully")
+            print(f"method: update_db msg:  DB UPDATED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
 
             return {"msg": "Data updated successfully"}
 
     except Exception as error:
-        logging.error(
-            "API: insertIntoDatabase MSG: Error while adding data to database - %s", error)
-        print(
-            f"method: update_db msg:  DB UPDATED FAILED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+        logging.error("API: insertIntoDatabase MSG: Error while adding data to database - %s", error)
+        print(f"method: update_db msg:  DB UPDATED FAILED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
         return {"err": "Error while adding data to database"}

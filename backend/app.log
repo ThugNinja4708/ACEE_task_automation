@@ -928,3 +928,41 @@ DETAIL:  Failing row contains (31, 1123123, 1, 1, 1,1,.,1,1,.,1,1,.,1,1, null, n
 30-03-2023 22:39:35 - INFO -  * Detected change in 'C:\\Personal\\acee_automation\\helper_functions.py', reloading
 30-03-2023 22:39:35 - INFO -  * Restarting with stat
 30-03-2023 22:39:36 - INFO - ENV variables ready
+31-03-2023 12:05:52 - INFO - ENV variables ready
+31-03-2023 12:05:55 - INFO - Connected to DB
+31-03-2023 12:05:58 - INFO - Connected to DB
+31-03-2023 12:05:58 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+31-03-2023 12:05:58 - INFO - [33mPress CTRL+C to quit[0m
+31-03-2023 12:05:58 - INFO -  * Restarting with stat
+31-03-2023 12:05:58 - INFO - ENV variables ready
+31-03-2023 12:06:02 - INFO - Connected to DB
+31-03-2023 12:06:05 - INFO - Connected to DB
+31-03-2023 12:06:05 - WARNING -  * Debugger is active!
+31-03-2023 12:06:05 - INFO -  * Debugger PIN: 287-870-207
+31-03-2023 12:06:55 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+31-03-2023 12:06:56 - INFO - 127.0.0.1 - - [31/Mar/2023 12:06:56] "[35m[1mPOST /getRequests HTTP/1.1[0m" 500 -
+31-03-2023 12:07:53 - INFO -  * Detected change in 'c:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\app.py', reloading
+31-03-2023 12:07:53 - INFO -  * Restarting with stat
+31-03-2023 12:07:54 - INFO - ENV variables ready
+31-03-2023 12:08:01 - INFO - ENV variables ready
+31-03-2023 12:08:05 - INFO - Connected to DB
+31-03-2023 12:08:08 - INFO - Connected to DB
+31-03-2023 12:08:08 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+31-03-2023 12:08:08 - INFO - [33mPress CTRL+C to quit[0m
+31-03-2023 12:08:08 - INFO -  * Restarting with stat
+31-03-2023 12:08:09 - INFO - ENV variables ready
+31-03-2023 12:08:12 - INFO - Connected to DB
+31-03-2023 12:08:15 - INFO - Connected to DB
+31-03-2023 12:08:15 - WARNING -  * Debugger is active!
+31-03-2023 12:08:15 - INFO -  * Debugger PIN: 287-870-207
+31-03-2023 12:08:16 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+31-03-2023 12:08:16 - INFO - 127.0.0.1 - - [31/Mar/2023 12:08:16] "[35m[1mPOST /getRequests HTTP/1.1[0m" 500 -
+31-03-2023 12:09:17 - INFO -  * Detected change in 'c:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\app.py', reloading
+31-03-2023 12:09:17 - INFO -  * Restarting with stat
+31-03-2023 12:09:18 - INFO - ENV variables ready
+31-03-2023 12:09:21 - INFO - Connected to DB
+31-03-2023 12:09:24 - INFO - Connected to DB
+31-03-2023 12:09:24 - WARNING -  * Debugger is active!
+31-03-2023 12:09:24 - INFO -  * Debugger PIN: 287-870-207
