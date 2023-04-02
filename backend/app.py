@@ -40,7 +40,7 @@ def getRequestsForClient() -> list() :
         with conn_pool.getconn() as conn:
             conn.autocommit = True
             with conn.cursor() as cursor:
-                queryToRetrieveRequest = f"SELECT * FROM service_requests WHERE support_id = (%s); "
+                queryToRetrieveRequest = f"SELECT * FROM service_requests WHERE support_id = (%s) ORDER BY created_date DESC; "
                 cursor.execute(queryToRetrieveRequest, (support_id))
                 rows = cursor.fetchall()
         list_of_tasks = list()
