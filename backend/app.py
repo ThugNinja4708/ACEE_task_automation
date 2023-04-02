@@ -91,33 +91,9 @@ def approveRequest():
 ############################################## TESTING DONT USE THESE #############################
 
 
-@app.route("/getRequests", methods=["POST"])
-def getRequestsForClient():
-    ############## REQUEST FORMDATA #################
-    support_id = request.form['support_id']
-    
-    #################################################
-    try:
-        with conn_pool.getconn() as conn:
-            conn.autocommit = True
-            with conn.cursor() as cursor:
-                queryToRetrieveRequest = f"SELECT * FROM {config('DATABASE_SERVICES_TABLE')} WHERE support_id = (%s); "
-                cursor.execute(queryToRetrieveRequest, (support_id))
-                list_tasks = cursor.fetchall()
-                logging.info(f"API: /getRequests MSG: Data retrieved from database successfully!")
-    except (Exception, Error) as error:
-        logging.error(f"API: /getRequests MSG: Error occured while retrieving data from the database - {error}")
-        return {"err": f"Error occured while retrieving data from the database: {error}"}
 
-    # Data Formatting 
-    list_of_tasks = []
-    for task_item in list_tasks:
-        task = REQUEST()
-        task.task_id, task.customer_id, task.support_id, task.type_of_task, task.task_data, task.description, task.status, task.error_message, task.created_date,task.approval_date, task.created_date = task_item
-        list_of_tasks.append(task)
-    print(list_of_tasks)
-    return jsonify(list_of_tasks) # 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
