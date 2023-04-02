@@ -41,7 +41,7 @@ def get_tenant_by_customer_id(customer_id):
     url = f'{CONSOLE_URL}/tenants/v1/{customer_id}'
     try:
         response = session.get(url, headers=HEADERS)
-        response.raise_for_status()  # raise exception if status code is not 2xx
+        # response.raise_for_status()  # raise exception if status code is not 2xx
     except (Exception) as error:
         logging.error(f"GET_TENANT_BY_CUSTOMER_ID MSG: Error Retreiving tenant by customer ID - {error}")
         return None
@@ -62,14 +62,13 @@ def get_public_ips(customer_id):
 
 
 
-def update_public_ips(customer_id, ips_to_add):
+def update_public_ips(customer_id: str(), ips_to_add: list()):
     try:
         current_ips = get_public_ips(customer_id)
         updated_ips = current_ips + ips_to_add
         logging.info(f"UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - {customer_id}")
     except (Exception) as err:
-        logging.error(
-            f'UPDATE_PUBLIC_IPS failed to fetch public ips of customer ID {customer_id}-{err}')
+        logging.error(f'UPDATE_PUBLIC_IPS failed to fetch public ips of customer ID {customer_id}-{err}')
         return {'err': f"Error occured while retrieving public IPs - {err}"}
 
     url = f"{CONSOLE_URL}/tenants/v1/{customer_id}/config"
@@ -77,7 +76,7 @@ def update_public_ips(customer_id, ips_to_add):
 
     try:
         response = session.patch(url, headers=HEADERS, data=payload)
-        response.raise_for_status()
+        # response.raise_for_status()
     except (Exception) as err:
         logging.error(
             f'UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {err}')
@@ -117,7 +116,7 @@ def deploy_feature_H5GW(customer_id):
     return response.json()
 
 
-def install_PSM_certs(customer_id: str, psm_files: List[str]) -> Union[Dict[str, str], Any]:
+def install_PSM_certs(customer_id, psm_files):
     payload = {'description': 'this is file description'}
     files = []
     path = "database_files"
@@ -128,8 +127,7 @@ def install_PSM_certs(customer_id: str, psm_files: List[str]) -> Union[Dict[str,
 
     url = f"{CONSOLE_URL}files/v1/installPsmCertificate/{customer_id}"
     try:
-        response = requests.post(url, headers=HEADERS,
-                                 data=payload, files=files)
+        response = session.post(url, headers=HEADERS,data=payload, files=files)
         response.raise_for_status()
 
     except (Exception) as err:
@@ -157,7 +155,7 @@ def install_LDAP_certs(customer_id, ldap_files):
     files = [('files', (file_name[file_name.index("_")+1:], open(f"database_files/{file_name}", 'rb'), 'application/octet-stream')) for file_name in ldap_files]
 
     try:
-        response = requests.post(url, headers=HEADERS,
+        response = session.post(url, headers=HEADERS,
                                  data=payload, files=files)
 
     except (Exception) as err:

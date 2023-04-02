@@ -1,3 +1,4 @@
 app.log
 _pycache/
 .env
+pipfile
