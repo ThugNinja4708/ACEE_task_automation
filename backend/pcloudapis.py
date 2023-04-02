@@ -9,7 +9,7 @@ CONSOLE_URL = 'https://console.privilegecloud.cyberark.com'
 
 logging.basicConfig(filename='app.log', filemode='w',
                     format='%(asctime)s - %(message)s', datefmt="%d-%b-%y %H:%M:%S")
-
+session = requests.Session()
 
 
 def get_all_tenants():
@@ -64,11 +64,9 @@ def get_public_ips(customer_id):
 
 def update_public_ips(customer_id, ips_to_add):
     try:
-        customerPublicIPs = get_public_ips(customer_id)
-        for i in IPsToBeAdded:
-            customerPublicIPs.append(i)
-            logging.info(
-                f"UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - {customer_id}")
+        current_ips = get_public_ips(customer_id)
+        updated_ips = current_ips + ips_to_add
+        logging.info(f"UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - {customer_id}")
     except (Exception) as err:
         logging.error(
             f'UPDATE_PUBLIC_IPS failed to fetch public ips of customer ID {customer_id}-{err}')
