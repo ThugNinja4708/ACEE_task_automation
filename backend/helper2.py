@@ -21,16 +21,17 @@ def queueing(task):
 
 
 def do_task():
-    while True:
-        for task in list(queue):
-            if task.customer_id not in lockedCustomers:
-                task.status = "PCLOUD_API_CALLED"
-                lockedCustomers.append(task.customer_id)
-                print(f"LOCKED_CUSTOMER with cust_id:{task.customer_id}")
-                print(f"PCLOUD_API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-                api_call(task)
-                print(f"PCLOUD_API_CALL_FINISH for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-                db_update(task, "IN_PROGRESS")
+    for task in list(queue):
+        if task.customer_id not in lockedCustomers:
+            task.status = "PCLOUD_API_CALLED"
+            lockedCustomers.append(task.customer_id)
+            print(f"LOCKED_CUSTOMER with cust_id:{task.customer_id}")
+            print(f"PCLOUD_API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+            api_call(task)
+            print(f"PCLOUD_API_CALL_FINISH for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+            db_update(task, "IN_PROGRESS")
+        else:
+            continue
 
 
 async def get_status():
@@ -51,7 +52,10 @@ async def get_status():
                     print(f"FREED_CUSTOMER_ID on cust_id:{task.customer_id} status:{task.status}")
                     db_update(task, response["status"])
                     do_task()
-        await asyncio.sleep(10)
+                else:
+                    continue
+
+        await asyncio.sleep(15)
 
 
 def api_call(task):
@@ -78,7 +82,7 @@ def db_update(task, status):
             return {"msg": "Data updated successfully"}
 
     except Exception as error:
-        logging.error(" MSG: Error while UPDATING data to database - %s", error)
+        logging.error("MSG: Error while UPDATING data to database - %s", error)
         print(f"DB UPDATED FAILED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
         return {"err": "Error while UPDATING data to database"}
 

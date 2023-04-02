@@ -179,3 +179,267 @@ LINE 1: SELECT * FROM requests WHERE task_id = ('25') ;
 02-04-2023 19:04:23 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
 02-04-2023 19:04:24 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
 02-04-2023 19:04:24 - INFO - UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 20:14:49 - INFO - ENV variables ready
+02-04-2023 20:14:52 - INFO - Connected to DB
+02-04-2023 20:14:56 - INFO - Connected to DB
+02-04-2023 20:14:56 - DEBUG - Using proactor: IocpProactor
+02-04-2023 20:14:56 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 20:14:56 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 20:14:56 - INFO -  * Restarting with stat
+02-04-2023 20:14:56 - INFO - ENV variables ready
+02-04-2023 20:15:00 - INFO - Connected to DB
+02-04-2023 20:15:03 - INFO - Connected to DB
+02-04-2023 20:15:03 - DEBUG - Using proactor: IocpProactor
+02-04-2023 20:15:03 - WARNING -  * Debugger is active!
+02-04-2023 20:15:03 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 20:15:04 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 20:15:04 - INFO - 127.0.0.1 - - [02/Apr/2023 20:15:04] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 20:15:13 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 20:15:13 - INFO - 127.0.0.1 - - [02/Apr/2023 20:15:13] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:06:09 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:06:09 - INFO - 127.0.0.1 - - [02/Apr/2023 21:06:09] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:06:12 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:06:12 - INFO - 127.0.0.1 - - [02/Apr/2023 21:06:12] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:07:00 - ERROR -  MSG: Error while UPDATING data to database - connection already closed
+02-04-2023 21:07:08 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 21:07:10 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+02-04-2023 21:07:10 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 21:09:51 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\app.py', reloading
+02-04-2023 21:15:00 - INFO - ENV variables ready
+02-04-2023 21:15:03 - INFO - Connected to DB
+02-04-2023 21:15:06 - INFO - Connected to DB
+02-04-2023 21:15:06 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:15:06 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 21:15:06 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 21:15:06 - INFO -  * Restarting with stat
+02-04-2023 21:15:07 - INFO - ENV variables ready
+02-04-2023 21:15:10 - INFO - Connected to DB
+02-04-2023 21:15:21 - INFO - ENV variables ready
+02-04-2023 21:15:24 - INFO - Connected to DB
+02-04-2023 21:15:27 - INFO - Connected to DB
+02-04-2023 21:15:27 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:15:27 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 21:15:27 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 21:15:27 - INFO -  * Restarting with stat
+02-04-2023 21:15:28 - INFO - ENV variables ready
+02-04-2023 21:15:31 - INFO - Connected to DB
+02-04-2023 21:15:34 - INFO - Connected to DB
+02-04-2023 21:15:34 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:15:34 - WARNING -  * Debugger is active!
+02-04-2023 21:15:34 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 21:16:00 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:16:00 - INFO - 127.0.0.1 - - [02/Apr/2023 21:16:00] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:16:10 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:16:10 - INFO - 127.0.0.1 - - [02/Apr/2023 21:16:10] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:16:22 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:16:22 - INFO - 127.0.0.1 - - [02/Apr/2023 21:16:22] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:16:52 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 21:16:52 - INFO - 127.0.0.1 - - [02/Apr/2023 21:16:52] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 21:17:02 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 21:17:02 - INFO - 127.0.0.1 - - [02/Apr/2023 21:17:02] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 21:17:04 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 21:17:05 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 21:17:05 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 21:17:08 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 21:17:08 - INFO - 127.0.0.1 - - [02/Apr/2023 21:17:08] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 21:17:15 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 21:17:15 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 21:17:20 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+02-04-2023 21:17:20 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 21:18:14 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:18:14 - INFO - 127.0.0.1 - - [02/Apr/2023 21:18:14] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:18:35 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 21:18:35 - INFO - 127.0.0.1 - - [02/Apr/2023 21:18:35] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 21:18:40 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+02-04-2023 21:18:40 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 21:23:26 - INFO - ENV variables ready
+02-04-2023 21:23:29 - INFO - Connected to DB
+02-04-2023 21:23:33 - INFO - Connected to DB
+02-04-2023 21:23:33 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:23:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 21:23:33 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 21:23:33 - INFO -  * Restarting with stat
+02-04-2023 21:23:33 - INFO - ENV variables ready
+02-04-2023 21:23:36 - INFO - Connected to DB
+02-04-2023 21:23:40 - INFO - Connected to DB
+02-04-2023 21:23:40 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:23:40 - WARNING -  * Debugger is active!
+02-04-2023 21:23:40 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 21:24:07 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+02-04-2023 21:24:43 - INFO - ENV variables ready
+02-04-2023 21:24:46 - INFO - Connected to DB
+02-04-2023 21:24:50 - INFO - Connected to DB
+02-04-2023 21:24:50 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:24:50 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 21:24:50 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 21:24:50 - INFO -  * Restarting with stat
+02-04-2023 21:24:50 - INFO - ENV variables ready
+02-04-2023 21:24:53 - INFO - Connected to DB
+02-04-2023 21:24:56 - INFO - Connected to DB
+02-04-2023 21:24:56 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:24:56 - WARNING -  * Debugger is active!
+02-04-2023 21:24:56 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 21:24:58 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:24:58 - INFO - 127.0.0.1 - - [02/Apr/2023 21:24:58] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:25:23 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 21:25:23 - INFO - 127.0.0.1 - - [02/Apr/2023 21:25:23] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 21:25:26 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 21:25:28 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d270f377-c87a-481e-a72f-502c647337d7 HTTP/1.1" 200 None
+02-04-2023 21:25:28 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 21:30:15 - INFO - ENV variables ready
+02-04-2023 21:30:18 - INFO - Connected to DB
+02-04-2023 21:30:21 - INFO - Connected to DB
+02-04-2023 21:30:21 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:30:21 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 21:30:21 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 21:30:21 - INFO -  * Restarting with stat
+02-04-2023 21:30:21 - INFO - ENV variables ready
+02-04-2023 21:30:25 - INFO - Connected to DB
+02-04-2023 21:30:28 - INFO - Connected to DB
+02-04-2023 21:30:28 - DEBUG - Using proactor: IocpProactor
+02-04-2023 21:30:28 - WARNING -  * Debugger is active!
+02-04-2023 21:30:28 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 21:30:43 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 21:30:43 - INFO - 127.0.0.1 - - [02/Apr/2023 21:30:43] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 21:31:05 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 21:31:05 - INFO - 127.0.0.1 - - [02/Apr/2023 21:31:05] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 21:31:13 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 21:31:14 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 21:31:14 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:47:31 - INFO - ENV variables ready
+02-04-2023 22:47:34 - INFO - Connected to DB
+02-04-2023 22:47:37 - INFO - Connected to DB
+02-04-2023 22:47:37 - DEBUG - Using proactor: IocpProactor
+02-04-2023 22:47:37 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 22:47:37 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 22:47:37 - INFO -  * Restarting with stat
+02-04-2023 22:47:38 - INFO - ENV variables ready
+02-04-2023 22:47:41 - INFO - Connected to DB
+02-04-2023 22:47:44 - INFO - Connected to DB
+02-04-2023 22:47:44 - DEBUG - Using proactor: IocpProactor
+02-04-2023 22:47:44 - WARNING -  * Debugger is active!
+02-04-2023 22:47:44 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 22:48:19 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 22:48:19 - INFO - 127.0.0.1 - - [02/Apr/2023 22:48:19] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 22:48:43 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 22:48:43 - INFO - 127.0.0.1 - - [02/Apr/2023 22:48:43] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 22:48:44 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 22:48:45 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:48:45 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:52:23 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+02-04-2023 22:54:19 - INFO - ENV variables ready
+02-04-2023 22:54:23 - INFO - Connected to DB
+02-04-2023 22:54:26 - INFO - Connected to DB
+02-04-2023 22:54:26 - DEBUG - Using proactor: IocpProactor
+02-04-2023 22:54:26 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 22:54:26 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 22:54:26 - INFO -  * Restarting with stat
+02-04-2023 22:54:26 - INFO - ENV variables ready
+02-04-2023 22:54:29 - INFO - Connected to DB
+02-04-2023 22:54:32 - INFO - Connected to DB
+02-04-2023 22:54:32 - DEBUG - Using proactor: IocpProactor
+02-04-2023 22:54:32 - WARNING -  * Debugger is active!
+02-04-2023 22:54:32 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 22:55:08 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 22:55:08 - INFO - 127.0.0.1 - - [02/Apr/2023 22:55:08] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 22:55:34 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 22:55:35 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:55:35 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 22:55:35 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 22:55:37 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 202 692
+02-04-2023 22:55:37 - INFO - UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 22:55:43 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 22:55:43 - INFO - 127.0.0.1 - - [02/Apr/2023 22:55:43] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 22:55:48 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:55:48 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:56:03 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:56:03 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:56:19 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:56:19 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:56:34 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:56:34 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:56:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:56:50 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:57:06 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:57:06 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:57:21 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:57:21 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:57:37 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:57:37 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:57:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:57:52 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:58:08 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:58:08 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:58:23 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:58:23 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:58:39 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:58:39 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:58:54 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 22:58:54 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 22:59:55 - INFO - ENV variables ready
+02-04-2023 22:59:58 - INFO - Connected to DB
+02-04-2023 23:00:01 - INFO - Connected to DB
+02-04-2023 23:00:01 - DEBUG - Using proactor: IocpProactor
+02-04-2023 23:00:01 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+02-04-2023 23:00:01 - INFO - [33mPress CTRL+C to quit[0m
+02-04-2023 23:00:01 - INFO -  * Restarting with stat
+02-04-2023 23:00:02 - INFO - ENV variables ready
+02-04-2023 23:00:05 - INFO - Connected to DB
+02-04-2023 23:00:08 - INFO - Connected to DB
+02-04-2023 23:00:08 - DEBUG - Using proactor: IocpProactor
+02-04-2023 23:00:08 - WARNING -  * Debugger is active!
+02-04-2023 23:00:08 - INFO -  * Debugger PIN: 102-491-821
+02-04-2023 23:00:21 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 23:00:21 - INFO - 127.0.0.1 - - [02/Apr/2023 23:00:21] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 23:00:31 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+02-04-2023 23:00:31 - INFO - 127.0.0.1 - - [02/Apr/2023 23:00:31] "POST /insertIntoDatabase HTTP/1.1" 200 -
+02-04-2023 23:00:53 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+02-04-2023 23:00:54 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:00:54 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 23:00:54 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 23:00:55 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 320
+02-04-2023 23:00:55 - INFO - UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 23:00:57 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 23:00:57 - INFO - 127.0.0.1 - - [02/Apr/2023 23:00:57] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 23:01:01 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+02-04-2023 23:01:01 - INFO - 127.0.0.1 - - [02/Apr/2023 23:01:01] "POST /approveRequest HTTP/1.1" 200 -
+02-04-2023 23:01:09 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:01:09 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:01:13 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:01:13 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 23:01:13 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 23:01:15 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 202 711
+02-04-2023 23:01:15 - INFO - UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - 873ac79f-7154-479c-9f86-480ed0cb80cc
+02-04-2023 23:01:25 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:01:25 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:01:41 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:01:41 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:01:56 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:01:56 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:02:12 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:02:12 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:02:27 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:02:27 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:02:43 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:02:43 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:02:58 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:02:58 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:03:14 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:03:14 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:03:29 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:03:29 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:03:45 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:03:45 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:04:01 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:04:01 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+02-04-2023 23:04:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+02-04-2023 23:04:16 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL

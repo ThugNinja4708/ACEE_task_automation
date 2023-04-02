@@ -117,6 +117,7 @@ def approveRequest():
                 row = cursor.fetchone()
         helper2.queueing(REQUEST(*row)) # REQUEST object
         logging.info("API: /approveRequest MSG: Data recevied from DB Successfully.!" )
+        return {"msg": "Approved..!"}
     except (Exception, Error) as error:
         logging.error(f"API: /approveRequest MSG: Error occured while retrieving data from the database - {error}")
         return {"err": f"Error occured while retrieving data from the database: {error}"}

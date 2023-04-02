@@ -3,7 +3,7 @@ import requests
 import logging
 HEADERS = {
     'Content-Type': 'application/json',
-    'Authorization': 'eyJraWQiOiJSbENXRENCQ2NRbGdtTGVPcDlCcnMwV2VPQTluS1ZHZUNFTnJFQWJaeGlvPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiQko1b0VLaXpCSEU4QTNTZ1FIdThvdyIsInN1YiI6ImI3MjUwZWE0LTZmMzAtNDliOC1iZWRlLTYwYTQ0M2EzMDg2NyIsImNvZ25pdG86Z3JvdXBzIjpbInVzLWVhc3QtMV9kVkdSY2RLUTFfY3liZXJhcmstaWRlbnRpdHkiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfZFZHUmNkS1ExIiwiY29nbml0bzp1c2VybmFtZSI6ImN5YmVyYXJrLWlkZW50aXR5X3JrYW50aGFAY3liZXJhcmsuY29tIiwiYXVkIjoiNnFxbnBsbzViY2Zha2g0Y2pmcDhobW90bnAiLCJpZGVudGl0aWVzIjpbeyJ1c2VySWQiOiJya2FudGhhQGN5YmVyYXJrLmNvbSIsInByb3ZpZGVyTmFtZSI6ImN5YmVyYXJrLWlkZW50aXR5IiwicHJvdmlkZXJUeXBlIjoiU0FNTCIsImlzc3VlciI6Imh0dHBzOlwvXC9hYWU0MjIyLm15LmlkYXB0aXZlLmFwcFwvMTc2YzQwOWItMDU0YS00OGY0LTlkYzItYzllNzIzOGQ4ZDlhIiwicHJpbWFyeSI6InRydWUiLCJkYXRlQ3JlYXRlZCI6IjE2NzI4NDMzMDA0MzUifV0sInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjgwNDQwOTM1LCJjdXN0b206VVNFUl9HUk9VUFMiOiJwQ2xvdWRDb25zb2xlT3BzUFJEIiwiZXhwIjoxNjgwNDU1MzM1LCJpYXQiOjE2ODA0NDA5MzV9.WHO5KOW4yVfmCWrHYJCk2tGHKZErtzmKaOBschgFZE4U9q8ABXO5HxgV6hQvnakDThod-HqxGBYYQg9fNB5ACr_QV2MwRV03mahtFX19DkvCn3gJFTX-e1URHuaGKzmXMKvIY7GXc4EWOB32DYq6Uqf7jzL_IAOA2CjTLp6Kk6MclUjqtfDK9bRQ2Kb0melSoPV2AZ5wg2w7_XJBKBtn58viG6yISvgaYVM7mq-lR2C6EE7pFcNN0z0MoXz_6fqP_50DFm_BuNtV2mw07LHKLVOLGDsZZ00ub3lFs6u8FHKr-1BOiTk6Hn_Bk8oZ8NAEJ3wrxMj8b1WY1UOblTzORA',
+    'Authorization': 'eyJraWQiOiJSbENXRENCQ2NRbGdtTGVPcDlCcnMwV2VPQTluS1ZHZUNFTnJFQWJaeGlvPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoidVU2S0pYTVM3VkFOak9HeUtsR3hwdyIsInN1YiI6ImI3MjUwZWE0LTZmMzAtNDliOC1iZWRlLTYwYTQ0M2EzMDg2NyIsImNvZ25pdG86Z3JvdXBzIjpbInVzLWVhc3QtMV9kVkdSY2RLUTFfY3liZXJhcmstaWRlbnRpdHkiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfZFZHUmNkS1ExIiwiY29nbml0bzp1c2VybmFtZSI6ImN5YmVyYXJrLWlkZW50aXR5X3JrYW50aGFAY3liZXJhcmsuY29tIiwibm9uY2UiOiJSOVBsSnVORlN1RnpRdmpKckVVY3cyTlhZRm9OUDk3MXE5b1h6WExQdlVXUmd1bEFWem5UWGI2cm8ya2lpelUtakd6YWJsRmlmRGtDY3czZnJnTDNCYzROZUdnWXBEVWFYR1dHbkc2dGhadlZib1J6bjBqOGhjMmp5QW0wcERrbjZuMVZqZXIwVy1ZZ1p5d0NJUlV1MmVrQnhGOVJONXE1Y0ZnX25KeWg5bVEiLCJhdWQiOiI2cXFucGxvNWJjZmFraDRjamZwOGhtb3RucCIsImlkZW50aXRpZXMiOlt7InVzZXJJZCI6InJrYW50aGFAY3liZXJhcmsuY29tIiwicHJvdmlkZXJOYW1lIjoiY3liZXJhcmstaWRlbnRpdHkiLCJwcm92aWRlclR5cGUiOiJTQU1MIiwiaXNzdWVyIjoiaHR0cHM6XC9cL2FhZTQyMjIubXkuaWRhcHRpdmUuYXBwXC8xNzZjNDA5Yi0wNTRhLTQ4ZjQtOWRjMi1jOWU3MjM4ZDhkOWEiLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTY3Mjg0MzMwMDQzNSJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2ODA0NTU3NzAsImN1c3RvbTpVU0VSX0dST1VQUyI6InBDbG91ZENvbnNvbGVPcHNQUkQiLCJleHAiOjE2ODA0NzAxNzAsImlhdCI6MTY4MDQ1NTc3MH0.It3360tVW_J9PKvvttaFqiwyI6dxUIqQ2kNKJONNK3IrSn2ah6xrvP8qiwnDEG_0kWmWZVib4ZCgqE7xq3Vt-iZHnkVyvPRZNrQyJjB0ahiJV3CrA20Woa7hVydl5ph3odwszQ8TrMrmYacsqqeo8BkROHG38I198C-OeoFtyZx8yZNa2-kQTTo-xY7PlbcZItVMPlk5NkVXNU2SLlvTAXbmhIalQqgALNsK9_-BOpIi3UUa7YFAMsSCXfzEu85fm1EqcmfCMPvjTRRcuYt5AKLudpmv5EEbG_VTlLr7i16zifXJgnnE3-8FX0A2hPFSVyG480IVbTyHjCjSCXmxAw',
 }
 CONSOLE_URL = 'https://console.privilegecloud.cyberark.com'
 
@@ -78,12 +78,10 @@ def update_public_ips(customer_id: str(), ips_to_add: list()):
         response = session.patch(url, headers=HEADERS, data=payload)
         # response.raise_for_status()
     except (Exception) as err:
-        logging.error(
-            f'UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {err}')
+        logging.error(f'UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {err}')
         return {'err': f"Error occured while updating public IPs"}
 
-    logging.info(
-        f"UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - {customer_id}")
+    logging.info(f"UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - {customer_id}")
     return response.json()
 
 
@@ -96,8 +94,9 @@ def get_task_status(customer_id):
         logging.error(f'GET_TASK_STATUS MSG: Failed to fetch task status - {err}')
         return None
     logging.info(f'GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL')
-    return response.json()[0]
-
+    latest_task = response.json()[0]
+    # print(latest_task)
+    return latest_task
 
 def deploy_feature_H5GW(customer_id):
     url = f"{CONSOLE_URL}tenants/v1/{customer_id}/features/html5gw"
