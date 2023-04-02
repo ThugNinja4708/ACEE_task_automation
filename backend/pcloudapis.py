@@ -3,7 +3,7 @@ import requests
 import logging
 HEADERS = {
     'Content-Type': 'application/json',
-    'Authorization': '',
+    'Authorization': 'eyJraWQiOiJSbENXRENCQ2NRbGdtTGVPcDlCcnMwV2VPQTluS1ZHZUNFTnJFQWJaeGlvPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiQko1b0VLaXpCSEU4QTNTZ1FIdThvdyIsInN1YiI6ImI3MjUwZWE0LTZmMzAtNDliOC1iZWRlLTYwYTQ0M2EzMDg2NyIsImNvZ25pdG86Z3JvdXBzIjpbInVzLWVhc3QtMV9kVkdSY2RLUTFfY3liZXJhcmstaWRlbnRpdHkiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tXC91cy1lYXN0LTFfZFZHUmNkS1ExIiwiY29nbml0bzp1c2VybmFtZSI6ImN5YmVyYXJrLWlkZW50aXR5X3JrYW50aGFAY3liZXJhcmsuY29tIiwiYXVkIjoiNnFxbnBsbzViY2Zha2g0Y2pmcDhobW90bnAiLCJpZGVudGl0aWVzIjpbeyJ1c2VySWQiOiJya2FudGhhQGN5YmVyYXJrLmNvbSIsInByb3ZpZGVyTmFtZSI6ImN5YmVyYXJrLWlkZW50aXR5IiwicHJvdmlkZXJUeXBlIjoiU0FNTCIsImlzc3VlciI6Imh0dHBzOlwvXC9hYWU0MjIyLm15LmlkYXB0aXZlLmFwcFwvMTc2YzQwOWItMDU0YS00OGY0LTlkYzItYzllNzIzOGQ4ZDlhIiwicHJpbWFyeSI6InRydWUiLCJkYXRlQ3JlYXRlZCI6IjE2NzI4NDMzMDA0MzUifV0sInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjgwNDQwOTM1LCJjdXN0b206VVNFUl9HUk9VUFMiOiJwQ2xvdWRDb25zb2xlT3BzUFJEIiwiZXhwIjoxNjgwNDU1MzM1LCJpYXQiOjE2ODA0NDA5MzV9.WHO5KOW4yVfmCWrHYJCk2tGHKZErtzmKaOBschgFZE4U9q8ABXO5HxgV6hQvnakDThod-HqxGBYYQg9fNB5ACr_QV2MwRV03mahtFX19DkvCn3gJFTX-e1URHuaGKzmXMKvIY7GXc4EWOB32DYq6Uqf7jzL_IAOA2CjTLp6Kk6MclUjqtfDK9bRQ2Kb0melSoPV2AZ5wg2w7_XJBKBtn58viG6yISvgaYVM7mq-lR2C6EE7pFcNN0z0MoXz_6fqP_50DFm_BuNtV2mw07LHKLVOLGDsZZ00ub3lFs6u8FHKr-1BOiTk6Hn_Bk8oZ8NAEJ3wrxMj8b1WY1UOblTzORA',
 }
 CONSOLE_URL = 'https://console.privilegecloud.cyberark.com'
 
@@ -96,8 +96,7 @@ def get_task_status(customer_id):
         logging.error(f'GET_TASK_STATUS MSG: Failed to fetch task status - {err}')
         return None
     logging.info(f'GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL')
-    last_task=response[0]
-    return response.json()
+    return response.json()[0]
 
 
 def deploy_feature_H5GW(customer_id):

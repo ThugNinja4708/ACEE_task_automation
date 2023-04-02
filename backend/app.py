@@ -102,13 +102,16 @@ def approveRequest():
 
     ############## REQUEST FORMDATA #################
     task_id = request.form['task_id']
+    approval_date = str(datetime.now().date())
     # task_data = request.form['task_data']
     # list_task_id = [(x,) for x in list_task_id]
     #################################################
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
-                queryToGetRequest = "SELECT * FROM requests WHERE task_id = (%s) ;"
+                queryToUpdateApprovedDate = "UPDATE service_requests SET approval_date = (%s) WHERE task_id = (%s);"
+                cursor.execute(queryToUpdateApprovedDate, (approval_date,task_id))
+                queryToGetRequest = "SELECT * FROM service_requests WHERE task_id = (%s) ;"
                 cursor.execute(queryToGetRequest,(task_id,))
                 conn.commit()
                 row = cursor.fetchone()

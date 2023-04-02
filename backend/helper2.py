@@ -1,5 +1,5 @@
 import time
-import datetime
+from datetime import datetime
 import logging
 import asyncio
 from decouple import config
@@ -51,7 +51,7 @@ async def get_status():
                     print(f"FREED_CUSTOMER_ID on cust_id:{task.customer_id} status:{task.status}")
                     db_update(task, response["status"])
                     do_task()
-            await asyncio.sleep(10)
+        await asyncio.sleep(10)
 
 
 def api_call(task):
@@ -62,23 +62,16 @@ def api_call(task):
 
 def db_update(task, status):
     task_id = task.task_id
-    customer_id = task.customer_id
-    support_id = task.support_id
-    type_of_task = task.type_of_task
-    task_data = task.task_data
     status = status
-    created_date = task.created_date
     description = task.description
     error_message = task.error_message
-    approval_date = task.approval_date
     completed_date = task.completed_date
 
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
 
-                cursor.execute("UPDATE service_requests SET customer_id= (%s),support_id= (%s),type_of_task= (%s),task_data=(%s),status= (%s),created_date= (%s),description= (%s),error_message= (%s),approval_date= (%s),completed_date= (%s) WHERE task_id=(%s) ;", (
-                    customer_id, support_id, type_of_task, task_data, status, created_date, description, error_message, approval_date, completed_date, task_id))
+                cursor.execute("UPDATE service_requests SET status = (%s),description = (%s),error_message = (%s),completed_date = (%s) WHERE task_id=(%s) ;", (status, description, error_message, completed_date, task_id))
                 conn.commit()
 
             print(f"DB UPDATED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
