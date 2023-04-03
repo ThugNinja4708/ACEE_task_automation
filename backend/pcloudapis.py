@@ -62,14 +62,24 @@ def get_public_ips(customer_id):
 
 
 
-def update_public_ips(customer_id: str(), ips_to_add: list()):
+def update_public_ips(customer_id: str(), ips_to_add: list(), add_or_remove: bool):
     try:
         current_ips = get_public_ips(customer_id)
-        updated_ips = current_ips + ips_to_add
         logging.info(f"UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - {customer_id}")
     except (Exception) as err:
         logging.error(f'UPDATE_PUBLIC_IPS failed to fetch public ips of customer ID {customer_id}-{err}')
         return {'err': f"Error occured while retrieving public IPs - {err}"}
+    
+    try:
+        if(add_or_remove == True):
+            updated_ips = current_ips + ips_to_add
+        else:
+            updated_ips = current_ips.remove(ips_to_add)
+        
+    except (Exception) as err:
+        logging.error(f'FAILED to update public ips of customer ID {customer_id}-{err}')
+        return {'err': f"Error occured while updating public IPs - {err}"}
+
 
     url = f"{CONSOLE_URL}/tenants/v1/{customer_id}/config"
     payload = json.dumps({"customerPublicIPs": updated_ips})

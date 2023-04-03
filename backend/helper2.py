@@ -3,7 +3,7 @@ from datetime import datetime
 import logging
 import asyncio
 from decouple import config
-from pcloudapis import update_public_ips
+from pcloudapis import update_public_ips,install_LDAP_certs,install_PSM_certs
 from db_conn_pool import getConnPool
 from pcloudapis import get_task_status
 
@@ -61,25 +61,22 @@ async def get_status():
 def api_call(task):
     # update_public_ips(task.customer_id, task.task_data.split(","))
     if task.type_of_task == 1:
-        response = update_public_ips(task.customer_id, task.task_data.split(','))
-        if response["status"] != "IN_PROGRESS":
-            task.status = "FAILED"
-        else:
-            task.status = response['status']
-        return task
-        
-        
+        response = update_public_ips(task.customer_id, task.task_data.split(','), add_or_remove=True)
     elif task.type_of_task == 2:
-        pass
+        response = update_public_ips(task.customer_id, task.task_data.split(','), add_or_remove=False)
     elif task.type_of_task == 3:
-
-        pass
+        response = install_PSM_certs(task.customer_id,task.task_data.split(','))
     elif task.type_of_task == 4:
-        pass
+        response = install_LDAP_certs(task.customer_id,task.task_data.split(','))
 
 
+    if response["status"] != "IN_PROGRESS":
+        task.status = "FAILED"
+    else:
+        task.status = response['status']
     print(f"API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
     time.sleep(5)
+    return task
 
 
 def db_update(task, status):
