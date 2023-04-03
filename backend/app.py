@@ -9,14 +9,17 @@ import logging
 from decouple import config
 import helper2
 from user_class import REQUEST
-import asyncio
+
 import threading
 
 
 app = Flask(__name__)
-logging.basicConfig(level=logging.DEBUG)
+
+logging.basicConfig(level=logging.DEBUG, filename='app.log',
+                    format="%(asctime)s - %(levelname)s - %(message)s", datefmt='%d-%m-%Y %H:%M:%S')
 
 conn_pool = getConnPool()
+
 
 def upload_files(files):
     file_list = list()
@@ -132,14 +135,13 @@ def verifyLogin():
         return {"isFound": False}
 
 
-def start_get_status():
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    loop.run_until_complete(helper2.get_status())
+status_check_thread = threading.Thread(target=helper2.get_status, name="status check")
+status_check_thread.start()
 
 
-if __name__ == '__main__':
-    get_status_thread = threading.Thread(target=start_get_status)
-    get_status_thread.start()
-    # get_status_thread.join()
-    app.run(debug=True, port=5000, host="127.0.0.1")
+app.run(debug=True)
+# if __name__ == '__main__':
+#     get_status_thread = threading.Thread(target=start_get_status)
+#     get_status_thread.start()
+#     # get_status_thread.join()
+#     app.run(debug=True, port=5000, host="127.0.0.1")

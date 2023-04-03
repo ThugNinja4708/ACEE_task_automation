@@ -126,12 +126,13 @@ def install_PSM_certs(customer_id, psm_files):
 
     url = f"{CONSOLE_URL}files/v1/installPsmCertificate/{customer_id}"
     try:
+        HEADERS.pop('Content-Type')
         response = session.post(url, headers=HEADERS,data=payload, files=files)
         response.raise_for_status()
 
     except (Exception) as err:
         logging.error(
-            "INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - {error}")
+            f"INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - {err}")
         return {'err': 'INSTALL_PSM_CERTIFICATE UNSUCCESSFUL'}
 
     logging.info(
@@ -143,10 +144,9 @@ def install_LDAP_certs(customer_id, ldap_files):
     payload = {'description': 'this is file description'}
     files = list()
     path = "database_files"
+
     for file_name in ldap_files:
         fileName = file_name[file_name.index("_")+1:]
-        # print("fileName: " , fileName)
-        # print("path: " , path + "\\" + file_name)
         files.append(('files', (fileName, open(
             path + "\\" + file_name, 'rb'), 'application/octet-stream')))
 
@@ -154,13 +154,15 @@ def install_LDAP_certs(customer_id, ldap_files):
     files = [('files', (file_name[file_name.index("_")+1:], open(f"database_files/{file_name}", 'rb'), 'application/octet-stream')) for file_name in ldap_files]
 
     try:
+        HEADERS.pop('Content-Type')
         response = session.post(url, headers=HEADERS,
                                  data=payload, files=files)
+        response.raise_for_status()
 
     except (Exception) as err:
         logging.error(
             f"INSTALL_LDAP_CERTS MSG: POST API call failed with error - {err}")
-        return {'err': "install_LDAP_certs failed with error - {err}"}
+        return {'err': f"install_LDAP_certs failed with error - {err}"}
 
     logging.info(f"INSTALL_LDAP_CERTS MSG: SUCCESSFUL - {customer_id}")
     return response.json()
