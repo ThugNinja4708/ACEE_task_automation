@@ -76,6 +76,7 @@ def update_public_ips(customer_id: str(), ips_to_add: list()):
 
     try:
         response = session.patch(url, headers=HEADERS, data=payload)
+        
         # response.raise_for_status()
     except (Exception) as err:
         logging.error(f'UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {err}')

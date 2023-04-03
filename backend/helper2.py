@@ -27,10 +27,11 @@ def do_task():
             lockedCustomers.append(task.customer_id)
             print(f"LOCKED_CUSTOMER with cust_id:{task.customer_id}")
             print(f"PCLOUD_API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-            api_call(task)
+            task = api_call(task)
             print(f"PCLOUD_API_CALL_FINISH for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-            db_update(task, "IN_PROGRESS")
+            db_update(task, task.status)
         else:
+            print("")
             continue
 
 
@@ -43,14 +44,13 @@ async def get_status():
                 if response["status"] in ["SUCCESS", "FAILED"]:
                     task.status = response["status"]
                     task.completed_date = str(datetime.now().date())
-                    if response["status"] == "FAILED":
+                    if task.status == "FAILED":
                         task.error_message = response["params"]["flowErrorDescription"]
                     print(f"TASK_ENDED on -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
                     queue.remove(task)
-                    # if task.customer_id in lockedCustomers:
                     lockedCustomers.remove(task.customer_id)
                     print(f"FREED_CUSTOMER_ID on cust_id:{task.customer_id} status:{task.status}")
-                    db_update(task, response["status"])
+                    db_update(task, task.status)
                     do_task()
                 else:
                     continue
@@ -61,14 +61,20 @@ async def get_status():
 def api_call(task):
     # update_public_ips(task.customer_id, task.task_data.split(","))
     if task.type_of_task == 1:
-        update_public_ips(task.customer_id, task.task_data.split(','))
-        pass
-    if task.type_of_task == 2:
-        pass
-    if task.type_of_task == 3:
+        response = update_public_ips(task.customer_id, task.task_data.split(','))
+        if response["status"] != "IN_PROGRESS":
+            task.status = "FAILED"
+        else:
+            task.status = response['status']
+        return task
         
+        
+    elif task.type_of_task == 2:
         pass
-    if task.type_of_task == 4:
+    elif task.type_of_task == 3:
+
+        pass
+    elif task.type_of_task == 4:
         pass
 
 
