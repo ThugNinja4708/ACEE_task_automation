@@ -3,18 +3,37 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../css/LoginPage.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSignIn } from "react-auth-kit";
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  const signIn = useSignIn();
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const handleSubmit = () =>{
-    if (userName === "saiteja" && password === "1234") {
+  const handleSubmit = async () =>{
+    const body = {
+      "userName":userName,
+      "password":password
+    }
+    console.log(userName,password);
+    await fetch("http://localhost:8000/login",{
+      mode:"cors",
+      method:"POST",
+      body:JSON.stringify(body),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    }).then(async (response)=>{
+      const res = await response.json();
+      console.log(res);
+      signIn({
+        token:res['token'],
+        expiresIn: 30,
+        tokenType: "Bearer",
+        authState: {userName:userName}
+      })
       navigate("/home");
-    }
-    else if(userName === "admin" && password === "admin"){
-      navigate("/authTokenInput");
-    }
+    })
   }
   return (
     <React.Fragment>

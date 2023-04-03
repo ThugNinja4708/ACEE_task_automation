@@ -1,13 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 import IPWhitelist from "./IPWhitelist";
+import NavBar from "../Pages/NavBar.js";
 import CertificateUpload from "./CertificateUpload";
 import "../css/Main.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 function Main() {
-  const navigate = useNavigate();
   const [task, setTask] = useState("");
   const [IPWhitelistContentVisible, setIPWhitelistContentVisible] =
     useState(false);
@@ -16,6 +17,9 @@ function Main() {
   const [customerId, setCustomerId] = useState("");
   const [open, setOpen] = useState(false);
   const [dropdownVisible, setDropDownVisible] = useState(true);
+  const [validationMessage, setValidationMessage] = useState(
+    "Enter valid Customer ID"
+  );
 
   useEffect(() => {
     task === "IPWhitelist"
@@ -26,12 +30,12 @@ function Main() {
       : setLDAPContentVisible(false);
     task === "PSM" ? setPSMContentVisible(true) : setPSMContentVisible(false);
 
-    if (customerId.length === 0) {
-      setDropDownVisible(true);
-    } else {
+    if (customerId.length === 36 && validationMessage.length === 0) {
       setDropDownVisible(false);
+    } else {
+      setDropDownVisible(true);
     }
-  }, [task, customerId]);
+  }, [task, customerId, validationMessage]);
 
   const handleOnChange = (e) => {
     setTask(e.target.value);
@@ -60,7 +64,7 @@ function Main() {
       method: "POST",
       body: formData,
     })
-      .then(async (response) => {
+      .then(async () => {
         setOpen(false);
         clearTask();
       })
@@ -74,135 +78,24 @@ function Main() {
     setTask("");
     setCustomerId("");
   };
+
+  const customerIDValidation = (event) => {
+    const regex = /^[a-f0-9-]+$/;
+    setCustomerId(event.target.value);
+    if (regex.test(customerId)) {
+      if (customerId.length < 36) {
+        setValidationMessage("Customer ID must be 36 characters.");
+      } else {
+        setValidationMessage("");
+      }
+    } else {
+      setValidationMessage("Enter valid Customer ID");
+    }
+  };
   return (
     <React.Fragment>
       <div className="page-body">
-        <div className="nav-bar">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i className="fas fa-bars"></i>
-              </button>
-              <div
-                className="collapse navbar-collapse"
-                id="navbarSupportedContent"
-              >
-                <a className="navbar-brand mt-2 mt-lg-0">
-                  <img
-                    src="https://www.cyberark.com/wp-content/uploads/2022/12/cyberark-logo-v2.svg"
-                    height="50"
-                    width="220"
-                    alt="MDB Logo"
-                    loading="lazy"
-                  />
-                </a>
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      onClick={() => {
-                        navigate("/dashboard");
-                      }}
-                    >
-                      Dashboard
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" onClick={() => {
-                        navigate("/home");
-                      }}>
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                    Documentation
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="d-flex align-items-center">
-                <a
-                  className="nav-link"
-                  onClick={() => {
-                    navigate("/");
-                  }}
-                >
-                  Log Out
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                {/* <div className="dropdown">
-                  <ul
-                    className="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Some news
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another news
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </div> */}
-                {/* <div className="dropdown">
-                  <a
-                    className="dropdown-toggle d-flex align-items-center hidden-arrow"
-                    href="#"
-                    id="navbarDropdownMenuAvatar"
-                    role="button"
-                    data-mdb-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                      className="rounded-circle"
-                      height="25"
-                      alt="Black and White Portrait of a Man"
-                      loading="lazy"
-                    />
-                  </a>
-                  <ul
-                    className="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="navbarDropdownMenuAvatar"
-                  >
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        My profile
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Settings
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Logout
-                      </a>
-                    </li>
-                  </ul>
-                </div> */}
-              </div>
-            </div>
-          </nav>
-        </div>
+        <NavBar />
         <div className="main-body">
           <div className="new-request">
             <span>Enter Customer Id :</span>&nbsp;&nbsp;
@@ -211,14 +104,26 @@ function Main() {
               className="customer-id"
               type="text"
               style={{ width: "300px" }}
-              onChange={(e) => setCustomerId(e.target.value)}
+              onChange={(event) => {
+                setCustomerId(event.target.value);
+              }}
+              onKeyUp={customerIDValidation}
             />
-            <br />
-            <br />
+            {dropdownVisible && (
+              <div className="errorMessage">
+                <FontAwesomeIcon icon={faExclamationCircle} className="icon" />
+                <p>{validationMessage}</p>
+              </div>
+            )}
+            {!dropdownVisible && (
+              <>
+                <br />
+                <br />
+              </>
+            )}
             <select
               className="form-select"
               id="dropdown-basic-button"
-              // value="Select an option"
               onChange={handleOnChange}
               defaultValue="Select an option"
               disabled={dropdownVisible}

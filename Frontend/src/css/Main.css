@@ -144,6 +144,27 @@ body{
 .refresh-button-div{
   margin-left: 1305px;
 }
+
+.errorMessage {
+  color: #721c24;
+  padding: 10px 10px 10px 100px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  margin-bottom: 10px;
+}
+.icon {
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  font-size: 20px;
+  animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
 /* #c9ced2 - light grey
 #1868b1 - dark blue
 #6a9bca - light blue
