@@ -59,7 +59,19 @@ async def get_status():
 
 
 def api_call(task):
-    update_public_ips(task.customer_id, task.task_data.split(","))
+    # update_public_ips(task.customer_id, task.task_data.split(","))
+    if task.type_of_task == 1:
+        update_public_ips(task.customer_id, task.task_data.split(','))
+        pass
+    if task.type_of_task == 2:
+        pass
+    if task.type_of_task == 3:
+        
+        pass
+    if task.type_of_task == 4:
+        pass
+
+
     print(f"API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
     time.sleep(5)
 
