@@ -68,7 +68,7 @@ def add_data() -> dict():
 
     # task == ldap cert upload or psm cert
     elif type_of_task in ['3', '4']:
-        task_data = upload_files(request.files.getlist('body'))
+        task_data = upload_files(request.files.getlist('task_data'))
 
     try:
         with conn_pool.getconn() as conn:

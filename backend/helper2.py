@@ -59,7 +59,6 @@ def get_status():
                 else:
                     continue
 
-        await asyncio.sleep(15)
 
 
 def api_call(task):
@@ -73,13 +72,14 @@ def api_call(task):
     elif task.type_of_task == 4:
         response = install_LDAP_certs(task.customer_id,task.task_data.split(','))
 
-
+    print(response)
     if response["status"] != "IN_PROGRESS":
         task.status = "FAILED"
     else:
         task.status = response['status']
+
     print(f"API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-    time.sleep(5)
+    
     return task
 
 
