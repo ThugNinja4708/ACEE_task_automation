@@ -1,3 +1,2 @@
-app.log
-_pycache/
-./backend/app.log
+\backend\app.log
+\backend\__pycache__\

@@ -1,9 +1,20 @@
 import React from "react";
 import "../css/NavBar.css";
 import { useNavigate } from "react-router-dom";
+import { useSignOut } from "react-auth-kit";
 
 const NavBar = () => {
+  const signOut = useSignOut();
   const navigate = useNavigate();
+  const logOut = () => {
+    try {
+      signOut();
+      console.log("Cookies deleted successfully");
+    } catch (err) {
+      console.error("Error deleting cookies", err);
+    }
+    // navigate("/");
+  };
   return (
     <>
       <div className="nav-bar">
@@ -37,8 +48,8 @@ const NavBar = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    onClick={() => {
-                      navigate("/dashboard");
+                    onClick={()=>{
+                      navigate("/dashboard")
                     }}
                   >
                     Dashboard
@@ -59,72 +70,10 @@ const NavBar = () => {
               </ul>
             </div>
             <div className="d-flex align-items-center">
-              <a className="nav-link" onClick={() => {
-                navigate("/")
-              }}>
+              <a className="nav-link" onClick={logOut}>
                 Log Out
               </a>
               &nbsp;&nbsp;&nbsp;
-              {/* <div className="dropdown">
-                <ul
-                  className="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Some news
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another news
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
-              {/* <div className="dropdown">
-                <a
-                  className="dropdown-toggle d-flex align-items-center hidden-arrow"
-                  href="#"
-                  id="navbarDropdownMenuAvatar"
-                  role="button"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                    className="rounded-circle"
-                    height="25"
-                    alt="Black and White Portrait of a Man"
-                    loading="lazy"
-                  />
-                </a>
-                <ul
-                  className="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdownMenuAvatar"
-                >
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      My profile
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Settings
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Logout
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </div>
         </nav>
