@@ -48,6 +48,7 @@ function Main() {
 
   const handleClose = () => {
     setOpen(false);
+    setValidationMessage("Enter valid Customer ID");
     clearTask();
   };
 
@@ -119,6 +120,8 @@ function Main() {
               <>
                 <br />
                 <br />
+                <br />
+                <br />
               </>
             )}
             <select
@@ -126,7 +129,7 @@ function Main() {
               id="dropdown-basic-button"
               onChange={handleOnChange}
               defaultValue="Select an option"
-              disabled={dropdownVisible}
+              disabled={false} // change this to dropDownVisible
             >
               <option
                 value="selectAnOption"

@@ -147,14 +147,14 @@ body{
 
 .errorMessage {
   color: #721c24;
-  padding: 10px 10px 10px 100px;
+  padding: 10px 10px 10px 134px;
   transition: all 0.3s ease-in-out;
   position: relative;
   margin-bottom: 10px;
 }
 .icon {
   position: absolute;
-  left: 70px;
+  left: 104px;
   top: 10px;
   font-size: 20px;
   animation: shake 0.5s ease-in-out infinite;

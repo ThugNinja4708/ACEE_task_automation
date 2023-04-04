@@ -10,14 +10,15 @@ const IPWhitelist = (props) => {
   const [isLoading, setIsLoading] = useState(false);
   const [IP, setIP] = useState("");
   const [IPWhitelist, setIPWhitelist] = useState([]);
-  const [typeOfTask,setTypeOFTask] = useState(1);
+  const [typeOfTask,setTypeOFTask] = useState();
   useEffect(() => {
-    if (IPWhitelist.length === 0 || isLoading) {
-      setSubmitButtonDisabled(true);
-    } else {
-      setSubmitButtonDisabled(false);
+    if(IPWhitelist.length > 0 && !isLoading && typeOfTask){
+      setSubmitButtonDisabled(false)
     }
-  }, [IPWhitelist, isLoading]);
+    else{
+      setSubmitButtonDisabled(true)
+    }
+  }, [IPWhitelist, isLoading,typeOfTask]);
   const handleChange = () => {
     setIPWhitelist((oldIPWhitelist) => {
       return [...oldIPWhitelist, IP];

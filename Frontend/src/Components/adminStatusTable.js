@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { data } from "../Components/Reports.js";
 import "../css/StatusTable.css";
 import "../css/adminStatusTable.css";
+import data from "../Mock data/data";
 import { useEffect } from "react";
 
 const AdminStatusTable = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState(data);
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [searchPhrase, setSearchPhrase] = useState("");
   const [sortOrder, setSortOrder] = useState({ col: "", order: "asc" });
@@ -29,7 +29,7 @@ const AdminStatusTable = () => {
       );
     });
     setFilteredUsers(matchedUsers);
-  }, [searchPhrase, tableRefresh]);
+  }, [searchPhrase,tableRefresh]);
   formData.set("support_id", 1);
   useEffect(() => {
     async function fetchData() {

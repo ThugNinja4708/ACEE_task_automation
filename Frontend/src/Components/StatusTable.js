@@ -1,41 +1,37 @@
 import { useEffect, useState } from "react";
-import { data } from "../Components/Reports";
 import "../css/StatusTable.css";
 import NavBar from "../Pages/NavBar";
+import data from "../Mock data/data";
+import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 const StatusTable = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState(data);
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [searchPhrase, setSearchPhrase] = useState("");
   const [sortOrder, setSortOrder] = useState({ col: "", order: "asc" });
-  const [isPageLoading,setIsPageLoading]=useState(true);
+  const [isPageLoading, setIsPageLoading] = useState(true);
   const taskMapToServiceRequest = {
     1: "IP Whitelist (Add)",
     2: "IP Whitelist (Remove)",
-    3: "LDAP Certificate Upload",
-    4: "PSM Certificate",
+    3: "PSM Certificate Upload",
+    4: "LDAP Certificate Upload",
   };
-  const formData = new FormData();
-  formData.set("support_id", 1);
-  useEffect(() => {
-    async function fetchData() {
-      await fetch("http://localhost:5000//getRequests", {
-        mode: "cors",
-        method: "POST",
-        body: formData,
-      }).then(async (response) => {
-        const userList = await response.json();
-        setUsers(userList);
-        setFilteredUsers(userList);
-      });
-    }
-    fetchData();
-  }, []);
-  useEffect(()=>{
-    if(users.length > 0){
-      document.body.style.filter = "blur(0px)";
-    }
-  },[users])
+  // const formData = new FormData();
+  // formData.set("support_id", 1);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     await fetch("http://localhost:5000//getRequests", {
+  //       mode: "cors",
+  //       method: "POST",
+  //       body: formData,
+  //     }).then(async (response) => {
+  //       const userList = await response.json();
+  //       setUsers(userList);
+  //       setFilteredUsers(userList);
+  //     });
+  //   }
+  //   fetchData();
+  // }, []);
   useEffect(() => {
     const matchedUsers = users.filter((user) => {
       return (
@@ -128,38 +124,52 @@ const StatusTable = () => {
   };
   const sortData = (column) => {
     if (sortOrder.order === "asc") {
-      const sortedData = [...data].sort((a, b) =>
-        a[column].toLowerCase() > b[column].toLowerCase() ? 1 : -1
-      );
-      setUsers(sortedData);
+      if (column === "create_date" || column === "complete_date") {
+        const sortedData = [...data].sort(
+          (a, b) => new Date(b[column]) - new Date(a[column])
+        );
+        setFilteredUsers(sortedData);
+      } else {
+        const sortedData = [...data].sort((a, b) =>
+          a[column].toLowerCase() > b[column].toLowerCase() ? 1 : -1
+        );
+        setFilteredUsers(sortedData);
+      }
       setSortOrder({ col: column, order: "desc" });
     }
     if (sortOrder.order === "desc") {
-      const sortedData = [...data].sort((a, b) =>
-        a[column].toLowerCase() < b[column].toLowerCase() ? 1 : -1
-      );
-      setUsers(sortedData);
+      if (column === "create_date" || column === "complete_date") {
+        const sortedData = [...data].sort(
+          (a, b) => new Date(a[column]) - new Date(b[column])
+        );
+        setFilteredUsers(sortedData);
+      } else {
+        const sortedData = [...data].sort((a, b) =>
+          a[column].toLowerCase() < b[column].toLowerCase() ? 1 : -1
+        );
+        setFilteredUsers(sortedData);
+      }
       setSortOrder({ col: column, order: "asc" });
     }
   };
-  // const renderArrow = (column) => {
-  //   if (sortOrder.order === "asc" && sortOrder.col === column) {
-  //     return <FaArrowUp />;
-  //   } else if (sortOrder.order === "desc" && sortOrder.col === column) {
-  //     return <FaArrowDown />;
-  //   } else {
-  //     return null;
-  //   }
-  // };
+  const renderArrow = (column) => {
+    if (sortOrder.order === "asc" && sortOrder.col === column) {
+      return <FaArrowUp />;
+    } else if (sortOrder.order === "desc" && sortOrder.col === column) {
+      return <FaArrowDown />;
+    } else {
+      return null;
+    }
+  };
   return (
     <>
       <div className="container">
-        <div className="container1">
+        {/* <div className="container1">
           <div className="ring"></div>
           <div className="ring"></div>
           <div className="ring"></div>
           <p>Loading...</p>
-        </div>
+        </div> */}
         <NavBar style={{ width: "100%" }} />
         <div className="table-container">
           <div className="search-container">
@@ -183,16 +193,32 @@ const StatusTable = () => {
                   onClick={() => sortData("Service_Request")}
                 >
                   <span style={{ marginRight: 10 }}>Service Request</span>
-                  {/* {sortOrder.col === "Service_Request"
+                  {sortOrder.col === "Service_Request"
                     ? renderArrow("Service_Request")
-                    : null} */}
+                    : null}
                 </th>
-                <th className="status" onClick={() => sortData("Status")}>
+                <th className="status" onClick={() => sortData("status")}>
                   <span style={{ marginRight: 10 }}>Status</span>
-                  {/* {sortOrder.col === "Status" ? renderArrow("Status") : null} */}
+                  {sortOrder.col === "status" ? renderArrow("status") : null}
                 </th>
-                <th className="created-date">Created Date</th>
-                <th className="end-date">Completed Date</th>
+                <th
+                  className="created-date"
+                  onClick={() => sortData("create_date")}
+                >
+                  <span style={{ marginRight: 10 }}>Created Date</span>
+                  {sortOrder.col === "create_date"
+                    ? renderArrow("create_date")
+                    : null}
+                </th>
+                <th
+                  className="end-date"
+                  onClick={() => sortData("complete_date")}
+                >
+                  <span style={{ marginRight: 5 }}>Completed Date</span>
+                  {sortOrder.col === "complete_date"
+                    ? renderArrow("complete_date")
+                    : null}
+                </th>
               </tr>
             </thead>
             <tbody>{renderUsers()}</tbody>
