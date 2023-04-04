@@ -1,10 +1,11 @@
 import { useState } from "react";
-import "../css/StatusTable.css";
-import "../css/adminStatusTable.css";
+import "../css/userDashboard.css";
+import "../css/adminDashboard.css";
 import data from "../Mock data/data";
 import { useEffect } from "react";
+import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
-const AdminStatusTable = () => {
+const AdminDashboard = () => {
   const [users, setUsers] = useState(data);
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [searchPhrase, setSearchPhrase] = useState("");
@@ -29,7 +30,7 @@ const AdminStatusTable = () => {
       );
     });
     setFilteredUsers(matchedUsers);
-  }, [searchPhrase,tableRefresh]);
+  }, [searchPhrase, tableRefresh]);
   formData.set("support_id", 1);
   useEffect(() => {
     async function fetchData() {
@@ -54,7 +55,7 @@ const AdminStatusTable = () => {
         mode: "cors",
         method: "POST",
         body: formData,
-      })
+      });
     }
     approveTask();
     setTableRefresh(true);
@@ -143,48 +144,62 @@ const AdminStatusTable = () => {
     });
   };
 
-  const search = (event) => {
-    const matchedUsers = data.filter((user) => {
-      return (
-        user.Service_Request.toLowerCase().includes(
-          event.target.value.toLowerCase()
-        ) ||
-        user.Status.toLowerCase().includes(event.target.value.toLowerCase()) ||
-        user.Customer_ID.toLowerCase().includes(
-          event.target.value.toLowerCase()
-        )
-      );
-    });
-    setUsers(matchedUsers);
-    setSearchPhrase(event.target.value);
-  };
-
   const sortData = (column) => {
     if (sortOrder.order === "asc") {
-      const sortedData = [...data].sort((a, b) =>
-        a[column].toLowerCase() > b[column].toLowerCase() ? 1 : -1
-      );
-      setUsers(sortedData);
+      if (column === "service_request") {
+        const sortedData = [...data].sort((a, b) => {
+          return taskMapToServiceRequest[a["task"]].toLowerCase() >
+            taskMapToServiceRequest[b["task"]].toLowerCase()
+            ? 1
+            : -1;
+        });
+        setFilteredUsers(sortedData);
+      } else if (column === "create_date" || column === "complete_date") {
+        const sortedData = [...data].sort(
+          (a, b) => new Date(b[column]) - new Date(a[column])
+        );
+        setFilteredUsers(sortedData);
+      } else {
+        const sortedData = [...data].sort((a, b) =>
+          a[column].toLowerCase() > b[column].toLowerCase() ? 1 : -1
+        );
+        setFilteredUsers(sortedData);
+      }
       setSortOrder({ col: column, order: "desc" });
     }
     if (sortOrder.order === "desc") {
-      const sortedData = [...data].sort((a, b) =>
-        a[column].toLowerCase() < b[column].toLowerCase() ? 1 : -1
-      );
-      setUsers(sortedData);
+      if (column === "service_request") {
+        const sortedData = [...data].sort((a, b) => {
+          return taskMapToServiceRequest[b["task"]].toLowerCase() >
+            taskMapToServiceRequest[a["task"]].toLowerCase()
+            ? 1
+            : -1;
+        });
+        setFilteredUsers(sortedData);
+      } else if (column === "create_date" || column === "complete_date") {
+        const sortedData = [...data].sort(
+          (a, b) => new Date(a[column]) - new Date(b[column])
+        );
+        setFilteredUsers(sortedData);
+      } else {
+        const sortedData = [...data].sort((a, b) =>
+          a[column].toLowerCase() < b[column].toLowerCase() ? 1 : -1
+        );
+        setFilteredUsers(sortedData);
+      }
       setSortOrder({ col: column, order: "asc" });
     }
   };
 
-  //   const renderArrow = (column) => {
-  //     if (sortOrder.order === "asc" && sortOrder.col === column) {
-  //       return <FaArrowUp />;
-  //     } else if (sortOrder.order === "desc" && sortOrder.col === column) {
-  //       return <FaArrowDown />;
-  //     } else {
-  //       return null;
-  //     }
-  //   };
+  const renderArrow = (column) => {
+    if (sortOrder.order === "asc" && sortOrder.col === column) {
+      return <FaArrowUp />;
+    } else if (sortOrder.order === "desc" && sortOrder.col === column) {
+      return <FaArrowDown />;
+    } else {
+      return null;
+    }
+  };
 
   return (
     <>
@@ -208,16 +223,35 @@ const AdminStatusTable = () => {
                 <th className="cid">Customer ID</th>
                 <th
                   className="service-request"
-                  onClick={() => sortData("Service_Request")}
+                  onClick={() => sortData("service_request")}
                 >
                   <span style={{ marginRight: 10 }}>Service Request</span>
-                  {/* {sortOrder.col === "Service_Request"
-                    ? renderArrow("Service_Request")
-                    : null} */}
+                  {sortOrder.col === "service_request"
+                    ? renderArrow("service_request")
+                    : null}
                 </th>
-                <th className="status">Status</th>
-                <th className="created-date">Created Date</th>
-                <th className="end-date">Completed Date</th>
+                <th className="status" onClick={() => sortData("status")}>
+                  <span style={{ marginRight: 10 }}>Status</span>
+                  {sortOrder.col === "status" ? renderArrow("status") : null}
+                </th>
+                <th
+                  className="created-date"
+                  onClick={() => sortData("create_date")}
+                >
+                  <span style={{ marginRight: 10 }}>Created Date</span>
+                  {sortOrder.col === "create_date"
+                    ? renderArrow("create_date")
+                    : null}
+                </th>
+                <th
+                  className="end-date"
+                  onClick={() => sortData("complete_date")}
+                >
+                  <span style={{ marginRight: 5 }}>Completed Date</span>
+                  {sortOrder.col === "complete_date"
+                    ? renderArrow("complete_date")
+                    : null}
+                </th>
                 <th className="approval">Approval Status</th>
               </tr>
             </thead>
@@ -234,4 +268,4 @@ const AdminStatusTable = () => {
   );
 };
 
-export default AdminStatusTable;
+export default AdminDashboard;

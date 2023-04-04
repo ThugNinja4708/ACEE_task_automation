@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import "../css/StatusTable.css";
+import "../css/adminDashboard.css";
 import NavBar from "../Pages/NavBar";
 import data from "../Mock data/data";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
-const StatusTable = () => {
+const UserDashboard = () => {
   const [users, setUsers] = useState(data);
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [searchPhrase, setSearchPhrase] = useState("");
@@ -78,53 +78,20 @@ const StatusTable = () => {
               <td className="service-request">LDAP Certificate Upload</td>
             ))}
           <td className="status">{user.status}</td>
-          {/* {(user.status === "SUCCESS" && (
-            <td className="status" style={{ color: "green" }}>
-              {user.Status}
-            </td>
-          )) ||
-            (user.Status === "FAILED" && (
-              <td className="status" style={{ color: "red" }}>
-                {user.Status}
-              </td>
-            )) ||
-            (user.Status === "IN_PROGRESS" && (
-              <td className="status" style={{ color: "#e66b19" }}>
-                {user.Status}
-              </td>
-            )) ||
-            (user.Status === "WAITING_FOR_APPROVAL" && (
-              <td className="status" style={{ color: "#f5b800" }}>
-                {user.Status}
-              </td>
-            )) ||
-            (user.Status === "DENIED" && (
-              <td className="status" style={{ color: "grey" }}>
-                {user.Status}
-              </td>
-            ))} */}
-
           <td className="created-date">{created_date}</td>
           <td className="end-date">{completed_date}</td>
         </tr>
       );
     });
   };
-  const search = () => {
-    const matchedUsers = users.filter((user) => {
-      return (
-        taskMapToServiceRequest[user.task]
-          .toLowerCase()
-          .includes(searchPhrase.toLowerCase()) ||
-        user.status.toLowerCase().includes(searchPhrase.toLowerCase()) ||
-        user.customer_id.toLowerCase().includes(searchPhrase.toLowerCase())
-      );
-    });
-    setUsers(matchedUsers);
-  };
   const sortData = (column) => {
     if (sortOrder.order === "asc") {
-      if (column === "create_date" || column === "complete_date") {
+      if (column === "service_request") {
+        const sortedData = [...data].sort((a, b) => {
+          return taskMapToServiceRequest[a["task"]].toLowerCase() > taskMapToServiceRequest[b["task"]].toLowerCase() ? 1 : -1;
+        });
+        setFilteredUsers(sortedData);
+      } else if (column === "create_date" || column === "complete_date") {
         const sortedData = [...data].sort(
           (a, b) => new Date(b[column]) - new Date(a[column])
         );
@@ -138,7 +105,12 @@ const StatusTable = () => {
       setSortOrder({ col: column, order: "desc" });
     }
     if (sortOrder.order === "desc") {
-      if (column === "create_date" || column === "complete_date") {
+      if (column === "service_request") {
+        const sortedData = [...data].sort((a, b) => {
+          return taskMapToServiceRequest[b["task"]].toLowerCase() > taskMapToServiceRequest[a["task"]].toLowerCase() ? 1 : -1;
+        });
+        setFilteredUsers(sortedData);
+      } else if (column === "create_date" || column === "complete_date") {
         const sortedData = [...data].sort(
           (a, b) => new Date(a[column]) - new Date(b[column])
         );
@@ -190,11 +162,11 @@ const StatusTable = () => {
                 <th className="cid">Customer ID</th>
                 <th
                   className="service-request"
-                  onClick={() => sortData("Service_Request")}
+                  onClick={() => sortData("service_request")}
                 >
                   <span style={{ marginRight: 10 }}>Service Request</span>
-                  {sortOrder.col === "Service_Request"
-                    ? renderArrow("Service_Request")
+                  {sortOrder.col === "service_request"
+                    ? renderArrow("service_request")
                     : null}
                 </th>
                 <th className="status" onClick={() => sortData("status")}>
@@ -229,4 +201,4 @@ const StatusTable = () => {
   );
 };
 
-export default StatusTable;
+export default UserDashboard;
