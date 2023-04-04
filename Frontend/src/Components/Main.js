@@ -55,6 +55,7 @@ function Main() {
     const formData = new FormData();
     formData.set("customer_id", customerId);
     formData.set("type_of_task", type_of_task);
+    
     for (var i = 0; i < body.length; i++) {
       formData.append("body", body[i]);
     }
@@ -107,7 +108,7 @@ function Main() {
               onChange={(event) => {
                 setCustomerId(event.target.value);
               }}
-              onKeyUp={customerIDValidation}
+              // onKeyUp={customerIDValidation}
             />
             {dropdownVisible && (
               <div className="errorMessage">
@@ -126,7 +127,7 @@ function Main() {
               id="dropdown-basic-button"
               onChange={handleOnChange}
               defaultValue="Select an option"
-              disabled={dropdownVisible}
+              disabled={!dropdownVisible}
             >
               <option
                 value="selectAnOption"

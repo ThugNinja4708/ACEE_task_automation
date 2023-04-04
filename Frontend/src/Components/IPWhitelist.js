@@ -9,6 +9,7 @@ const IPWhitelist = (props) => {
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [IP, setIP] = useState("");
+  const [valid,setValid] = useState(true);
   const [IPWhitelist, setIPWhitelist] = useState([]);
   const [typeOfTask,setTypeOFTask] = useState(1);
   useEffect(() => {
@@ -18,12 +19,20 @@ const IPWhitelist = (props) => {
       setSubmitButtonDisabled(false);
     }
   }, [IPWhitelist, isLoading]);
-  const handleChange = () => {
-    setIPWhitelist((oldIPWhitelist) => {
-      return [...oldIPWhitelist, IP];
-    });
-    setIP("");
-  };
+  
+  const validIPWithCIDR = new RegExp(/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])([/]([0-9]|1[0-9]|2[0-9]|3[0-2]))$/gi);
+  const validIP = new RegExp(/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/gi);
+  const handleChange = () =>{
+    if(validIP.test(IP) || validIPWithCIDR.test(IP) ){
+      const newIPWhitelist = [...IPWhitelist,IP];
+      setIPWhitelist(newIPWhitelist);
+      setValid(true);
+      setIP("");
+    }
+    else{
+      setValid(false);
+    }
+  }
   const removeIP = (index) => {
     const newList = IPWhitelist.filter(
       (ip) => IPWhitelist.indexOf(ip) !== index
@@ -40,15 +49,6 @@ const IPWhitelist = (props) => {
     setTypeOFTask(2);
     }
   }
-  const validateIPAddress = (ip) => {
-    var regularExpression =
-      /^(?:\d{1,3}\.){3}\d{1,3}\/(0|[1-9]\d?|1[0-9]{1,2}|2[0-9]|3[0-2])$/;
-    if (regularExpression.test(ip)) {
-      return true;
-    }
-    alert("You have entered an invalid IP address!");
-    return false;
-  };
   return (
     <>
       <div>
@@ -129,6 +129,7 @@ const IPWhitelist = (props) => {
             >
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
             </svg>
+            { !valid && <p className="invalid-ip-text">Enter a valid IP address</p>}
             <ul className="ip-list">
               {IPWhitelist.map((ip, index) => (
                 <li key={index} className="ip-item">

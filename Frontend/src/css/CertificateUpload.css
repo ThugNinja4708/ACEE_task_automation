@@ -53,6 +53,10 @@
     margin: 10px 0;
 }
 
+.invalid-filename-text{
+    color: #721c24;
+}
+
 .cancel-button{
     color:#3f51b5;
 }
