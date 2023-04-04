@@ -9,6 +9,8 @@ const CertificateUpload = (props) => {
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(true);
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [validFilename, setValidFilename] = useState(true);
+  const [invalidFiles,setInvalidFiles] = useState("");
   const fileInput = useRef(null);
 
   useEffect(() => {
@@ -22,6 +24,30 @@ const CertificateUpload = (props) => {
     setSelectedFiles([...selectedFiles, ...event.target.files]);
   };
 
+  const checkFileName = (files) =>{
+    var filesArray = []
+    files.forEach((file) =>{
+      filesArray.push(file.name)
+      var nameArray = file.name.split(" ")
+      if(nameArray.length === 1){
+        filesArray.pop();
+      }
+    })
+    if(filesArray.length === 0){
+      setValidFilename(true);
+      props.handleSubmit(files,props.type_of_task);
+      setIsLoading(true);
+    }
+    else{
+      var invalidFilesString = "";
+      filesArray.forEach (file =>{
+        invalidFilesString+=file+", ";
+      })
+      setValidFilename(false);
+      setInvalidFiles(invalidFilesString);
+      console.log("file(s)",invalidFiles,"are not valid");
+    }
+  }
   const fileDelete = (name) => {
     const newList = selectedFiles.filter((file) => file.name !== name);
     setSelectedFiles(newList);
@@ -87,6 +113,7 @@ const CertificateUpload = (props) => {
               </>
             ))}
           </ol>
+          {!validFilename && <p className="invalid-filename-text">The file(s) with name(s) {invalidFiles} are invalid</p>}
         </DialogContent>
         <DialogActions className="dialog-actions">
           <button className="cancel-button" onClick={props.handleClose}>
@@ -95,8 +122,7 @@ const CertificateUpload = (props) => {
           <button
             className="submit-button"
             onClick={() => {
-              props.handleSubmit(selectedFiles,props.type_of_task);
-              setIsLoading(true);
+              checkFileName(selectedFiles);
             }}
             disabled={submitButtonDisabled}
           >

@@ -3,3 +3,6 @@ Frontend/keys/private_key.pem
 app.py.txt
 app.py
 Frontend/src/Mock data/MOCK_DATA.json
+\backend\app.log
+\backend\__pycache__\
+\backend\database_files\
