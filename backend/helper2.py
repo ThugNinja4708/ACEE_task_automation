@@ -1,11 +1,11 @@
 import time
 from datetime import datetime
 import logging
-import asyncio
+
 from decouple import config
-from pcloudapis import update_public_ips
+from pcloudapis import update_public_ips,install_LDAP_certs,install_PSM_certs
 from db_conn_pool import getConnPool
-from pcloudapis import get_task_status
+from pcloudapis import get_task_status, update_public_ips
 
 conn_pool = getConnPool()
 
@@ -35,7 +35,7 @@ def do_task():
             continue
 
 
-async def get_status():
+def get_status():
     while True:
         for task in list(queue):
             if task.status == "PCLOUD_API_CALLED":
@@ -46,40 +46,41 @@ async def get_status():
                     task.completed_date = str(datetime.now().date())
                     if task.status == "FAILED":
                         task.error_message = response["params"]["flowErrorDescription"]
-                    print(f"TASK_ENDED on -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-                    queue.remove(task)
+                    print(
+                        f"TASK_ENDED on -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
+
+                    
+                    # if task.customer_id in lockedCustomers:
                     lockedCustomers.remove(task.customer_id)
                     print(f"FREED_CUSTOMER_ID on cust_id:{task.customer_id} status:{task.status}")
                     db_update(task, task.status)
                     do_task()
+                    queue.remove(task)
                 else:
                     continue
 
-        await asyncio.sleep(15)
 
 
 def api_call(task):
     # update_public_ips(task.customer_id, task.task_data.split(","))
     if task.type_of_task == 1:
-        response = update_public_ips(task.customer_id, task.task_data.split(','))
-        if response["status"] != "IN_PROGRESS":
-            task.status = "FAILED"
-        else:
-            task.status = response['status']
-        return task
-        
-        
+        response = update_public_ips(task.customer_id, task.task_data.split(','), add_or_remove=True)
     elif task.type_of_task == 2:
-        pass
+        response = update_public_ips(task.customer_id, task.task_data.split(','), add_or_remove=False)
     elif task.type_of_task == 3:
-
-        pass
+        response = install_PSM_certs(task.customer_id,task.task_data.split(','))
     elif task.type_of_task == 4:
-        pass
+        response = install_LDAP_certs(task.customer_id,task.task_data.split(','))
 
+    print(response)
+    if response["status"] != "IN_PROGRESS":
+        task.status = "FAILED"
+    else:
+        task.status = response['status']
 
     print(f"API_CALLED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
-    time.sleep(5)
+    
+    return task
 
 
 def db_update(task, status):
@@ -103,6 +104,3 @@ def db_update(task, status):
         logging.error("MSG: Error while UPDATING data to database - %s", error)
         print(f"DB UPDATED FAILED for -- taskid: {task.task_id} on cust_id:{task.customer_id} status:{task.status}")
         return {"err": "Error while UPDATING data to database"}
-
-
-
