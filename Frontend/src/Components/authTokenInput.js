@@ -3,8 +3,12 @@ import DialogActions from "@mui/material/DialogActions";
 import { DialogContent } from "@mui/material";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const AuthTokenInput = () => {
-    const navigate = useNavigate();
+  const [authToken, setAuthToken] = useState("");
+  const handleSubmitAuthToken = () => {
+  };
+  const navigate = useNavigate();
   return (
     <Dialog
       className="ipwhitelist-content"
@@ -32,18 +36,16 @@ const AuthTokenInput = () => {
         <textarea
           className="ip-input auth-input"
           type="text"
-          //   onChange={(e) => {
-          //     setIP(e.target.value);
-          //   }}
-          //   value={IP}
+          value={authToken}
+          onChange={(event) => {
+            setAuthToken(event.target.value);
+          }}
           rows={4}
           cols={10}
         />
       </DialogContent>
       <DialogActions className="dialog-actions">
-        <button className="submit-button" onClick={()=>{
-            navigate("/adminDashboard")
-        }}>
+        <button className="submit-button" onClick={handleSubmitAuthToken}>
           Submit
         </button>
       </DialogActions>

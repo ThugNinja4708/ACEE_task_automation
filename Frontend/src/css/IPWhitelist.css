@@ -59,6 +59,10 @@
     padding: 0% 15%;
 }
 
+.invalid-ip-text{
+    color: #721c24;
+}
+
 /* .cancel-button{
     background-color: white;
     height: 28px;

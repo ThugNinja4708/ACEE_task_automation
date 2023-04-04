@@ -1,3 +1,6 @@
 backend/app.log
 backend/__pycache__/
 backend/database_files/
+Frontend/keys/public_key.pem
+Frontend/keys/private_key.pem
+Frontend/src/Mock data/MOCK_DATA.json

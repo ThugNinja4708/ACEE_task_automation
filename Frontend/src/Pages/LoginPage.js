@@ -10,36 +10,37 @@ const LoginPage = () => {
   const signIn = useSignIn();
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const handleSubmit = async () =>{
+  const [showError, setShowError] = useState(true);
+  const handleSubmit = async () => {
     const body = {
-      "userName":userName,
-      "password":password
-    }
-    console.log(userName,password);
-    await fetch("http://localhost:8000/login",{
-      mode:"cors",
-      method:"POST",
-      body:JSON.stringify(body),
+      userName: userName,
+      password: password,
+    };
+    console.log(userName, password);
+    await fetch("http://localhost:8000/login", {
+      mode: "cors",
+      method: "POST",
+      body: JSON.stringify(body),
       headers: {
-        'Content-Type': 'application/json',
-      }
-    }).then(async (response)=>{
+        "Content-Type": "application/json",
+      },
+    }).then(async (response) => {
       const res = await response.json();
       console.log(res);
       signIn({
-        token:res['token'],
-        expiresIn: 30,
+        token: res["token"],
+        expiresIn: 1,
         tokenType: "Bearer",
-        authState: {userName:userName}
-      })
+        authState: { userName: userName },
+      });
       navigate("/home");
-    })
-  }
+    });
+  };
   return (
     <React.Fragment>
       <div className="page">
         <div className="cover">
-          <div className="content" style={{ padding: "10%" }}>
+          <div className="content" style={{ padding: "10% 10% 5% 10%" }}>
             <h3
               style={{
                 fontWeight: "500",
@@ -61,7 +62,7 @@ const LoginPage = () => {
               Enter Username
             </div>
             <input
-            className="user-credentials"
+              className="user-credentials"
               type="text"
               placeholder="Enter Username"
               style={{ width: "24em" }}
@@ -76,10 +77,10 @@ const LoginPage = () => {
                 paddingTop: "15px",
               }}
             >
-               Enter Password
+              Enter Password
             </div>
             <input
-            className="user-credentials"
+              className="user-credentials"
               type="password"
               placeholder="Enter Password"
               style={{ width: "24em" }}
@@ -99,10 +100,15 @@ const LoginPage = () => {
                 style={{ width: "360px" }}
                 onClick={handleSubmit}
               >
-                 Sign In
+                Sign In
               </button>
             </div>
           </div>
+          {showError && (
+            <div className="error-container">
+              <p>Invalid username or password</p>
+            </div>
+          )}
         </div>
       </div>
     </React.Fragment>

@@ -26,9 +26,6 @@ body{
     flex-direction: column;
     align-items: center;
 	padding-bottom: 20px;
-	
-	-webkit-filter: blur(20px);
-	filter: blur(20px);
 }
 .search-container{
 	padding-top:30px;
