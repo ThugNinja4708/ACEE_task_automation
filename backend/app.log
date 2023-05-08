@@ -1,7 +1,1673 @@
-04-04-2023 17:06:14 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Desktop\\ACEE_task_automation-816a64f830a784ee4f92d26ae1e77b33252c9115\\backend\\pcloudapis.py', reloading
-04-04-2023 17:06:14 - INFO -  * Restarting with stat
-04-04-2023 17:06:14 - INFO - ENV variables ready
-04-04-2023 17:06:18 - INFO - Connected to DB
-04-04-2023 17:06:21 - INFO - Connected to DB
-04-04-2023 17:06:21 - WARNING -  * Debugger is active!
-04-04-2023 17:06:21 - INFO -  * Debugger PIN: 649-714-256
+03-04-2023 15:27:32 - INFO - ENV variables ready
+03-04-2023 15:27:35 - INFO - Connected to DB
+03-04-2023 15:27:38 - INFO - Connected to DB
+03-04-2023 15:27:41 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:27:41 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:27:41 - INFO -  * Restarting with stat
+03-04-2023 15:27:42 - INFO - ENV variables ready
+03-04-2023 15:27:45 - INFO - Connected to DB
+03-04-2023 15:27:48 - INFO - Connected to DB
+03-04-2023 15:27:51 - WARNING -  * Debugger is active!
+03-04-2023 15:27:51 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:29:24 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\app.py', reloading
+03-04-2023 15:30:45 - INFO - ENV variables ready
+03-04-2023 15:30:48 - INFO - Connected to DB
+03-04-2023 15:30:51 - INFO - Connected to DB
+03-04-2023 15:30:53 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:30:53 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:30:54 - INFO -  * Restarting with stat
+03-04-2023 15:30:54 - INFO - ENV variables ready
+03-04-2023 15:30:57 - INFO - Connected to DB
+03-04-2023 15:31:00 - INFO - Connected to DB
+03-04-2023 15:31:02 - WARNING -  * Debugger is active!
+03-04-2023 15:31:03 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:31:13 - INFO - 127.0.0.1 - - [03/Apr/2023 15:31:13] "[35m[1mPOST /insertIntoDatabase HTTP/1.1[0m" 500 -
+03-04-2023 15:32:39 - INFO - ENV variables ready
+03-04-2023 15:32:42 - INFO - Connected to DB
+03-04-2023 15:32:45 - INFO - Connected to DB
+03-04-2023 15:32:47 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:32:47 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:32:48 - INFO -  * Restarting with stat
+03-04-2023 15:32:48 - INFO - ENV variables ready
+03-04-2023 15:32:51 - INFO - Connected to DB
+03-04-2023 15:32:54 - INFO - Connected to DB
+03-04-2023 15:32:56 - WARNING -  * Debugger is active!
+03-04-2023 15:32:57 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:33:07 - INFO - 127.0.0.1 - - [03/Apr/2023 15:33:07] "[35m[1mPOST /insertIntoDatabase HTTP/1.1[0m" 500 -
+03-04-2023 15:34:09 - INFO - ENV variables ready
+03-04-2023 15:34:12 - INFO - Connected to DB
+03-04-2023 15:34:15 - INFO - Connected to DB
+03-04-2023 15:34:17 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:34:17 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:34:18 - INFO -  * Restarting with stat
+03-04-2023 15:34:18 - INFO - ENV variables ready
+03-04-2023 15:34:21 - INFO - Connected to DB
+03-04-2023 15:34:24 - INFO - Connected to DB
+03-04-2023 15:34:27 - WARNING -  * Debugger is active!
+03-04-2023 15:34:27 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:35:12 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+03-04-2023 15:35:12 - INFO - 127.0.0.1 - - [03/Apr/2023 15:35:12] "POST /insertIntoDatabase HTTP/1.1" 200 -
+03-04-2023 15:35:42 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+03-04-2023 15:35:42 - INFO - 127.0.0.1 - - [03/Apr/2023 15:35:42] "POST /insertIntoDatabase HTTP/1.1" 200 -
+03-04-2023 15:38:28 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 15:38:28 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 15:38:29 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/d33962a1-05e5-4497-b776-58e93718d274 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002AA3BB51610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 15:38:29 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 15:38:29 - INFO - 127.0.0.1 - - [03/Apr/2023 15:38:29] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 15:38:29 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 401 54
+03-04-2023 15:38:29 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 15:43:00 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+03-04-2023 15:43:00 - INFO -  * Restarting with stat
+03-04-2023 15:43:00 - INFO - ENV variables ready
+03-04-2023 15:43:04 - INFO - Connected to DB
+03-04-2023 15:43:07 - INFO - Connected to DB
+03-04-2023 15:43:09 - WARNING -  * Debugger is active!
+03-04-2023 15:43:09 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:43:45 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+03-04-2023 15:44:10 - INFO - ENV variables ready
+03-04-2023 15:44:14 - INFO - Connected to DB
+03-04-2023 15:44:16 - INFO - Connected to DB
+03-04-2023 15:44:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:44:19 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:44:19 - INFO -  * Restarting with stat
+03-04-2023 15:44:20 - INFO - ENV variables ready
+03-04-2023 15:44:23 - INFO - Connected to DB
+03-04-2023 15:44:26 - INFO - Connected to DB
+03-04-2023 15:44:28 - WARNING -  * Debugger is active!
+03-04-2023 15:44:29 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:44:38 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 15:44:38 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 15:44:38 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/d33962a1-05e5-4497-b776-58e93718d274 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000217E49C62D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 15:44:38 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 15:44:38 - INFO - 127.0.0.1 - - [03/Apr/2023 15:44:38] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 15:44:39 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 401 54
+03-04-2023 15:44:39 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 15:46:33 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+03-04-2023 15:46:33 - INFO -  * Restarting with stat
+03-04-2023 15:46:33 - INFO - ENV variables ready
+03-04-2023 15:46:36 - INFO - Connected to DB
+03-04-2023 15:46:39 - INFO - Connected to DB
+03-04-2023 15:46:41 - WARNING -  * Debugger is active!
+03-04-2023 15:46:42 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:48:01 - INFO - ENV variables ready
+03-04-2023 15:48:04 - INFO - Connected to DB
+03-04-2023 15:48:07 - INFO - Connected to DB
+03-04-2023 15:48:10 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:48:10 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:48:10 - INFO -  * Restarting with stat
+03-04-2023 15:48:11 - INFO - ENV variables ready
+03-04-2023 15:48:14 - INFO - Connected to DB
+03-04-2023 15:48:17 - INFO - Connected to DB
+03-04-2023 15:48:19 - WARNING -  * Debugger is active!
+03-04-2023 15:48:20 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:48:29 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 15:48:29 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 15:48:29 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/d33962a1-05e5-4497-b776-58e93718d274 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024B15176350>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 15:48:29 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 15:48:29 - INFO - 127.0.0.1 - - [03/Apr/2023 15:48:29] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 15:48:29 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+03-04-2023 15:48:29 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 15:48:31 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - 'Content-Type'
+03-04-2023 15:50:25 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+03-04-2023 15:50:25 - INFO -  * Restarting with stat
+03-04-2023 15:50:26 - INFO - ENV variables ready
+03-04-2023 15:50:29 - INFO - Connected to DB
+03-04-2023 15:50:32 - INFO - Connected to DB
+03-04-2023 15:50:34 - WARNING -  * Debugger is active!
+03-04-2023 15:50:35 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:50:56 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+03-04-2023 15:51:12 - INFO - ENV variables ready
+03-04-2023 15:51:16 - INFO - Connected to DB
+03-04-2023 15:51:19 - INFO - Connected to DB
+03-04-2023 15:51:21 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:51:21 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:51:21 - INFO -  * Restarting with stat
+03-04-2023 15:51:22 - INFO - ENV variables ready
+03-04-2023 15:51:24 - INFO - ENV variables ready
+03-04-2023 15:51:27 - INFO - Connected to DB
+03-04-2023 15:51:31 - INFO - Connected to DB
+03-04-2023 15:51:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:51:33 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:51:33 - INFO -  * Restarting with stat
+03-04-2023 15:51:34 - INFO - ENV variables ready
+03-04-2023 15:51:37 - INFO - Connected to DB
+03-04-2023 15:51:40 - INFO - Connected to DB
+03-04-2023 15:51:42 - WARNING -  * Debugger is active!
+03-04-2023 15:51:42 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:51:52 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 15:51:52 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 15:51:52 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/d33962a1-05e5-4497-b776-58e93718d274 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000023145B78F90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 15:51:52 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 15:51:52 - INFO - 127.0.0.1 - - [03/Apr/2023 15:51:52] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 15:51:53 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+03-04-2023 15:51:53 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 15:51:54 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - 'Content-Type'
+03-04-2023 15:52:24 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+03-04-2023 15:52:24 - INFO -  * Restarting with stat
+03-04-2023 15:52:25 - INFO - ENV variables ready
+03-04-2023 15:52:28 - INFO - Connected to DB
+03-04-2023 15:52:31 - INFO - Connected to DB
+03-04-2023 15:52:33 - WARNING -  * Debugger is active!
+03-04-2023 15:52:33 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:52:54 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+03-04-2023 15:53:23 - INFO - ENV variables ready
+03-04-2023 15:53:26 - INFO - Connected to DB
+03-04-2023 15:53:29 - INFO - Connected to DB
+03-04-2023 15:53:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 15:53:31 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 15:53:32 - INFO -  * Restarting with stat
+03-04-2023 15:53:32 - INFO - ENV variables ready
+03-04-2023 15:53:36 - INFO - Connected to DB
+03-04-2023 15:53:38 - INFO - Connected to DB
+03-04-2023 15:53:41 - WARNING -  * Debugger is active!
+03-04-2023 15:53:41 - INFO -  * Debugger PIN: 102-491-821
+03-04-2023 15:53:50 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 15:53:50 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 15:53:50 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/d33962a1-05e5-4497-b776-58e93718d274 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000217BBDAA410>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 15:53:50 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 15:53:50 - INFO - 127.0.0.1 - - [03/Apr/2023 15:53:50] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 15:53:51 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+03-04-2023 15:53:51 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 15:53:53 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - 'Content-Type'
+03-04-2023 16:12:18 - INFO - ENV variables ready
+03-04-2023 16:12:21 - INFO - Connected to DB
+03-04-2023 16:12:24 - INFO - Connected to DB
+03-04-2023 16:12:26 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 16:12:27 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 16:12:27 - INFO -  * Restarting with stat
+03-04-2023 16:12:28 - INFO - ENV variables ready
+03-04-2023 16:12:32 - INFO - Connected to DB
+03-04-2023 16:12:35 - INFO - Connected to DB
+03-04-2023 16:12:37 - WARNING -  * Debugger is active!
+03-04-2023 16:12:38 - INFO -  * Debugger PIN: 977-148-731
+03-04-2023 16:12:47 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+03-04-2023 16:12:47 - INFO - 127.0.0.1 - - [03/Apr/2023 16:12:47] "POST /insertIntoDatabase HTTP/1.1" 200 -
+03-04-2023 16:13:12 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 16:13:12 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 16:13:13 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/873ac79f-7154-479c-9f86-480ed0cb80cc (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000023843EA4700>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 16:13:13 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 16:13:13 - INFO - 127.0.0.1 - - [03/Apr/2023 16:13:13] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 16:13:13 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+03-04-2023 16:13:13 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 16:13:15 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - 'Content-Type'
+03-04-2023 16:17:31 - INFO -  * Detected change in 'C:\\Personal\\git ace automation\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+03-04-2023 16:17:31 - INFO -  * Restarting with stat
+03-04-2023 16:17:32 - INFO - ENV variables ready
+03-04-2023 16:17:35 - INFO - Connected to DB
+03-04-2023 16:17:39 - INFO - Connected to DB
+03-04-2023 16:17:41 - WARNING -  * Debugger is active!
+03-04-2023 16:17:42 - INFO -  * Debugger PIN: 977-148-731
+03-04-2023 16:17:57 - INFO -  * Detected change in 'C:\\Personal\\git ace automation\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+03-04-2023 16:18:35 - INFO - ENV variables ready
+03-04-2023 16:18:39 - INFO - Connected to DB
+03-04-2023 16:18:42 - INFO - Connected to DB
+03-04-2023 16:18:44 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 16:18:44 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 16:18:44 - INFO -  * Restarting with stat
+03-04-2023 16:18:46 - INFO - ENV variables ready
+03-04-2023 16:18:49 - INFO - Connected to DB
+03-04-2023 16:18:52 - INFO - Connected to DB
+03-04-2023 16:18:54 - WARNING -  * Debugger is active!
+03-04-2023 16:18:56 - INFO -  * Debugger PIN: 977-148-731
+03-04-2023 16:19:13 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+03-04-2023 16:19:13 - INFO - 127.0.0.1 - - [03/Apr/2023 16:19:13] "POST /insertIntoDatabase HTTP/1.1" 200 -
+03-04-2023 16:19:23 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 16:19:23 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.comfiles:443
+03-04-2023 16:19:23 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - HTTPSConnectionPool(host='console.privilegecloud.cyberark.comfiles', port=443): Max retries exceeded with url: /v1/installPsmCertificate/873ac79f-7154-479c-9f86-480ed0cb80cc (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000025177375640>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+03-04-2023 16:19:23 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+03-04-2023 16:19:23 - INFO - 127.0.0.1 - - [03/Apr/2023 16:19:23] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 16:19:24 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+03-04-2023 16:19:24 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 16:19:25 - ERROR - INSTALL_PSM_CERTIFICATE MSG: Error occured while installing PSM certs - 'Content-Type'
+03-04-2023 16:20:21 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+03-04-2023 16:20:21 - INFO - 127.0.0.1 - - [03/Apr/2023 16:20:21] "POST /insertIntoDatabase HTTP/1.1" 200 -
+03-04-2023 16:20:36 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+03-04-2023 16:20:36 - INFO - 127.0.0.1 - - [03/Apr/2023 16:20:36] "POST /approveRequest HTTP/1.1" 200 -
+03-04-2023 16:22:13 - INFO - ENV variables ready
+03-04-2023 16:22:17 - INFO - Connected to DB
+03-04-2023 16:22:20 - INFO - Connected to DB
+03-04-2023 16:22:22 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+03-04-2023 16:22:22 - INFO - [33mPress CTRL+C to quit[0m
+03-04-2023 16:22:23 - INFO -  * Restarting with stat
+03-04-2023 16:22:24 - INFO - ENV variables ready
+03-04-2023 16:22:27 - INFO - Connected to DB
+03-04-2023 16:22:30 - INFO - Connected to DB
+03-04-2023 16:22:33 - WARNING -  * Debugger is active!
+03-04-2023 16:22:34 - INFO -  * Debugger PIN: 977-148-731
+03-04-2023 16:22:43 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+03-04-2023 16:22:43 - INFO - 127.0.0.1 - - [03/Apr/2023 16:22:43] "POST /insertIntoDatabase HTTP/1.1" 200 -
+03-04-2023 16:23:02 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+03-04-2023 16:23:02 - DEBUG - Starting new HTTPS connection (2): console.privilegecloud.cyberark.com:443
+03-04-2023 16:23:03 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+03-04-2023 16:23:03 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+03-04-2023 16:23:03 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+03-04-2023 16:23:03 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+03-04-2023 16:23:03 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+03-04-2023 16:23:04 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 202 694
+03-04-2023 16:23:04 - INFO - UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - 873ac79f-7154-479c-9f86-480ed0cb80cc
+03-04-2023 16:23:04 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+03-04-2023 16:23:04 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+03-04-2023 16:23:04 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+03-04-2023 16:23:05 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 409 374
+03-04-2023 16:23:05 - INFO - UPDATE_PUBLIC_IPS MSG: Public Ips Update SUCCESSFUL for Customer - 873ac79f-7154-479c-9f86-480ed0cb80cc
+03-04-2023 16:23:09 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+03-04-2023 16:23:09 - INFO - 127.0.0.1 - - [03/Apr/2023 16:23:09] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 13:07:10 - INFO - ENV variables ready
+04-05-2023 13:07:13 - INFO - Connected to DB
+04-05-2023 13:07:16 - INFO - Connected to DB
+04-05-2023 13:07:18 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 13:07:18 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 13:07:18 - INFO -  * Restarting with stat
+04-05-2023 13:07:19 - INFO - ENV variables ready
+04-05-2023 13:07:23 - INFO - Connected to DB
+04-05-2023 13:07:26 - INFO - Connected to DB
+04-05-2023 13:07:28 - WARNING -  * Debugger is active!
+04-05-2023 13:07:30 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 13:09:05 - ERROR - API: insertIntoDatabase MSG: Error while adding data to database - insert or update on table "service_requests" violates foreign key constraint "service_requests_support_id_fkey"
+DETAIL:  Key (support_id)=(1) is not present in table "users".
+
+04-05-2023 13:09:05 - INFO - 127.0.0.1 - - [04/May/2023 13:09:05] "POST /insertIntoDatabase HTTP/1.1" 200 -
+04-05-2023 13:11:58 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+04-05-2023 13:11:58 - INFO - 127.0.0.1 - - [04/May/2023 13:11:58] "POST /insertIntoDatabase HTTP/1.1" 200 -
+04-05-2023 13:12:28 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 13:12:28 - INFO - 127.0.0.1 - - [04/May/2023 13:12:28] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 13:12:53 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 13:12:53 - INFO - 127.0.0.1 - - [04/May/2023 13:12:53] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:19:52 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:19:52 - INFO -  * Restarting with stat
+04-05-2023 14:20:20 - INFO - ENV variables ready
+04-05-2023 14:20:23 - INFO - Connected to DB
+04-05-2023 14:20:26 - INFO - Connected to DB
+04-05-2023 14:20:28 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:20:28 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:20:28 - INFO -  * Restarting with stat
+04-05-2023 14:20:30 - INFO - ENV variables ready
+04-05-2023 14:20:33 - INFO - Connected to DB
+04-05-2023 14:20:36 - INFO - Connected to DB
+04-05-2023 14:20:38 - WARNING -  * Debugger is active!
+04-05-2023 14:20:39 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:20:50 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:20:50 - INFO - 127.0.0.1 - - [04/May/2023 14:20:50] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:26:53 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 14:26:53 - INFO -  * Restarting with stat
+04-05-2023 14:26:55 - INFO - ENV variables ready
+04-05-2023 14:27:02 - INFO - ENV variables ready
+04-05-2023 14:27:05 - INFO - Connected to DB
+04-05-2023 14:27:08 - INFO - Connected to DB
+04-05-2023 14:27:10 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:27:10 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:27:10 - INFO -  * Restarting with stat
+04-05-2023 14:27:11 - INFO - ENV variables ready
+04-05-2023 14:27:15 - INFO - Connected to DB
+04-05-2023 14:27:17 - INFO - Connected to DB
+04-05-2023 14:27:19 - WARNING -  * Debugger is active!
+04-05-2023 14:27:20 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:28:17 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:28:17 - INFO - 127.0.0.1 - - [04/May/2023 14:28:17] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:28:56 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:28:56 - INFO -  * Restarting with stat
+04-05-2023 14:28:59 - INFO - ENV variables ready
+04-05-2023 14:29:02 - INFO - Connected to DB
+04-05-2023 14:29:05 - INFO - Connected to DB
+04-05-2023 14:29:07 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:29:07 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:29:07 - INFO -  * Restarting with stat
+04-05-2023 14:29:08 - INFO - ENV variables ready
+04-05-2023 14:29:11 - INFO - Connected to DB
+04-05-2023 14:29:14 - INFO - Connected to DB
+04-05-2023 14:29:16 - WARNING -  * Debugger is active!
+04-05-2023 14:29:17 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:29:27 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:29:27 - INFO - 127.0.0.1 - - [04/May/2023 14:29:27] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:29:41 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:29:41 - INFO -  * Restarting with stat
+04-05-2023 14:29:43 - INFO - ENV variables ready
+04-05-2023 14:29:46 - INFO - Connected to DB
+04-05-2023 14:29:49 - INFO - Connected to DB
+04-05-2023 14:29:51 - WARNING -  * Debugger is active!
+04-05-2023 14:29:52 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:30:07 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:30:07 - INFO -  * Restarting with stat
+04-05-2023 14:30:08 - INFO - ENV variables ready
+04-05-2023 14:30:12 - INFO - Connected to DB
+04-05-2023 14:30:14 - INFO - Connected to DB
+04-05-2023 14:30:17 - WARNING -  * Debugger is active!
+04-05-2023 14:30:18 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:30:42 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:30:42 - INFO - 127.0.0.1 - - [04/May/2023 14:30:42] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:30:53 - INFO - ENV variables ready
+04-05-2023 14:30:57 - INFO - Connected to DB
+04-05-2023 14:31:00 - INFO - Connected to DB
+04-05-2023 14:31:02 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:31:02 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:31:02 - INFO -  * Restarting with stat
+04-05-2023 14:31:04 - INFO - ENV variables ready
+04-05-2023 14:31:07 - INFO - Connected to DB
+04-05-2023 14:31:10 - INFO - Connected to DB
+04-05-2023 14:31:12 - WARNING -  * Debugger is active!
+04-05-2023 14:31:13 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:31:28 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:31:28 - INFO -  * Restarting with stat
+04-05-2023 14:31:29 - INFO - ENV variables ready
+04-05-2023 14:31:35 - INFO - Connected to DB
+04-05-2023 14:31:40 - INFO - Connected to DB
+04-05-2023 14:31:42 - WARNING -  * Debugger is active!
+04-05-2023 14:31:43 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:31:54 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:31:54 - INFO - 127.0.0.1 - - [04/May/2023 14:31:54] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:32:00 - INFO - ENV variables ready
+04-05-2023 14:32:04 - INFO - Connected to DB
+04-05-2023 14:32:07 - INFO - Connected to DB
+04-05-2023 14:32:09 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:32:09 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:32:10 - INFO -  * Restarting with stat
+04-05-2023 14:32:11 - INFO - ENV variables ready
+04-05-2023 14:32:15 - INFO - Connected to DB
+04-05-2023 14:32:18 - INFO - Connected to DB
+04-05-2023 14:32:20 - WARNING -  * Debugger is active!
+04-05-2023 14:32:21 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:32:31 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:32:31 - INFO - 127.0.0.1 - - [04/May/2023 14:32:31] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:33:20 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:33:20 - INFO -  * Restarting with stat
+04-05-2023 14:33:21 - INFO - ENV variables ready
+04-05-2023 14:33:24 - INFO - Connected to DB
+04-05-2023 14:33:27 - INFO - Connected to DB
+04-05-2023 14:33:29 - WARNING -  * Debugger is active!
+04-05-2023 14:33:31 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:33:46 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:33:46 - INFO -  * Restarting with stat
+04-05-2023 14:33:47 - INFO - ENV variables ready
+04-05-2023 14:33:55 - INFO - ENV variables ready
+04-05-2023 14:33:59 - INFO - Connected to DB
+04-05-2023 14:34:02 - INFO - Connected to DB
+04-05-2023 14:34:04 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:34:04 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:34:04 - INFO -  * Restarting with stat
+04-05-2023 14:34:05 - INFO - ENV variables ready
+04-05-2023 14:34:09 - INFO - Connected to DB
+04-05-2023 14:34:13 - INFO - Connected to DB
+04-05-2023 14:34:15 - WARNING -  * Debugger is active!
+04-05-2023 14:34:16 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:34:26 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:34:26 - INFO - 127.0.0.1 - - [04/May/2023 14:34:26] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:34:54 - INFO - ENV variables ready
+04-05-2023 14:34:58 - INFO - Connected to DB
+04-05-2023 14:35:01 - INFO - Connected to DB
+04-05-2023 14:35:03 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:35:03 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:35:03 - INFO -  * Restarting with stat
+04-05-2023 14:35:05 - INFO - ENV variables ready
+04-05-2023 14:35:09 - INFO - Connected to DB
+04-05-2023 14:35:12 - INFO - Connected to DB
+04-05-2023 14:35:14 - WARNING -  * Debugger is active!
+04-05-2023 14:35:16 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:35:26 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:35:26 - INFO - 127.0.0.1 - - [04/May/2023 14:35:26] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:37:04 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:37:04 - INFO -  * Restarting with stat
+04-05-2023 14:37:05 - INFO - ENV variables ready
+04-05-2023 14:37:09 - INFO - Connected to DB
+04-05-2023 14:37:12 - INFO - Connected to DB
+04-05-2023 14:37:14 - WARNING -  * Debugger is active!
+04-05-2023 14:37:15 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:38:16 - INFO - ENV variables ready
+04-05-2023 14:38:19 - INFO - Connected to DB
+04-05-2023 14:38:22 - INFO - Connected to DB
+04-05-2023 14:38:24 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:38:24 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:38:24 - INFO -  * Restarting with stat
+04-05-2023 14:38:26 - INFO - ENV variables ready
+04-05-2023 14:38:29 - INFO - Connected to DB
+04-05-2023 14:38:32 - INFO - Connected to DB
+04-05-2023 14:38:35 - WARNING -  * Debugger is active!
+04-05-2023 14:38:36 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:38:46 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - type object argument after * must be an iterable, not NoneType
+04-05-2023 14:38:46 - INFO - 127.0.0.1 - - [04/May/2023 14:38:46] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:38:59 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:39:00 - INFO -  * Restarting with stat
+04-05-2023 14:39:01 - INFO - ENV variables ready
+04-05-2023 14:39:04 - INFO - Connected to DB
+04-05-2023 14:39:07 - INFO - Connected to DB
+04-05-2023 14:39:09 - WARNING -  * Debugger is active!
+04-05-2023 14:39:10 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:41:15 - INFO - ENV variables ready
+04-05-2023 14:41:18 - INFO - Connected to DB
+04-05-2023 14:41:21 - INFO - Connected to DB
+04-05-2023 14:41:23 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:41:23 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:41:24 - INFO -  * Restarting with stat
+04-05-2023 14:41:25 - INFO - ENV variables ready
+04-05-2023 14:41:28 - INFO - Connected to DB
+04-05-2023 14:41:31 - INFO - Connected to DB
+04-05-2023 14:41:33 - WARNING -  * Debugger is active!
+04-05-2023 14:41:34 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:41:43 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 14:41:43 - INFO - 127.0.0.1 - - [04/May/2023 14:41:43] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 14:42:51 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 14:42:51 - DEBUG - Starting new HTTPS connection (2): console.privilegecloud.cyberark.com:443
+04-05-2023 14:42:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 14:42:53 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 14:42:53 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 14:42:53 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 14:42:53 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+04-05-2023 14:42:54 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 202 788
+04-05-2023 14:42:54 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'dict' object has no attribute 'ok'
+04-05-2023 14:42:54 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'status'
+04-05-2023 14:42:54 - INFO - 127.0.0.1 - - [04/May/2023 14:42:54] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:42:55 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 14:42:55 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 14:42:55 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 14:42:56 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 409 374
+04-05-2023 14:42:56 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'dict' object has no attribute 'ok'
+04-05-2023 14:48:52 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 14:48:52 - INFO -  * Restarting with stat
+04-05-2023 14:48:53 - INFO - ENV variables ready
+04-05-2023 14:48:57 - INFO - Connected to DB
+04-05-2023 14:48:59 - INFO - Connected to DB
+04-05-2023 14:49:01 - WARNING -  * Debugger is active!
+04-05-2023 14:49:02 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:49:29 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\app.py', reloading
+04-05-2023 14:50:31 - INFO - ENV variables ready
+04-05-2023 14:50:35 - INFO - Connected to DB
+04-05-2023 14:50:38 - INFO - Connected to DB
+04-05-2023 14:50:38 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:50:38 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:50:38 - INFO -  * Restarting with stat
+04-05-2023 14:50:39 - INFO - ENV variables ready
+04-05-2023 14:50:43 - INFO - Connected to DB
+04-05-2023 14:50:46 - INFO - Connected to DB
+04-05-2023 14:50:46 - WARNING -  * Debugger is active!
+04-05-2023 14:50:46 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:50:52 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 14:50:52 - INFO - 127.0.0.1 - - [04/May/2023 14:50:52] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 14:51:05 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+04-05-2023 14:51:05 - INFO - 127.0.0.1 - - [04/May/2023 14:51:05] "POST /insertIntoDatabase HTTP/1.1" 200 -
+04-05-2023 14:51:16 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 14:51:16 - INFO - 127.0.0.1 - - [04/May/2023 14:51:16] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 14:51:28 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'REQUEST' object has no attribute 'customerId'
+04-05-2023 14:51:28 - INFO - 127.0.0.1 - - [04/May/2023 14:51:28] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:52:00 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 14:52:00 - INFO - 127.0.0.1 - - [04/May/2023 14:52:00] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 14:58:42 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 14:58:42 - INFO -  * Restarting with stat
+04-05-2023 14:58:44 - INFO - ENV variables ready
+04-05-2023 14:58:47 - INFO - Connected to DB
+04-05-2023 14:58:50 - WARNING -  * Debugger is active!
+04-05-2023 14:58:50 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:58:57 - INFO - ENV variables ready
+04-05-2023 14:59:00 - INFO - Connected to DB
+04-05-2023 14:59:03 - INFO - Connected to DB
+04-05-2023 14:59:03 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 14:59:03 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 14:59:03 - INFO -  * Restarting with stat
+04-05-2023 14:59:05 - INFO - ENV variables ready
+04-05-2023 14:59:08 - INFO - Connected to DB
+04-05-2023 14:59:11 - INFO - Connected to DB
+04-05-2023 14:59:11 - WARNING -  * Debugger is active!
+04-05-2023 14:59:11 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 14:59:12 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 14:59:12 - INFO - 127.0.0.1 - - [04/May/2023 14:59:12] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 14:59:38 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'REQUEST' object has no attribute 'customer_Id'
+04-05-2023 14:59:38 - INFO - 127.0.0.1 - - [04/May/2023 14:59:38] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 14:59:52 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 14:59:52 - INFO -  * Restarting with stat
+04-05-2023 14:59:53 - INFO - ENV variables ready
+04-05-2023 15:00:28 - INFO - ENV variables ready
+04-05-2023 15:00:31 - INFO - Connected to DB
+04-05-2023 15:00:33 - INFO - Connected to DB
+04-05-2023 15:00:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:00:33 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:00:33 - INFO -  * Restarting with stat
+04-05-2023 15:00:35 - INFO - ENV variables ready
+04-05-2023 15:00:38 - INFO - Connected to DB
+04-05-2023 15:00:40 - INFO - Connected to DB
+04-05-2023 15:00:41 - WARNING -  * Debugger is active!
+04-05-2023 15:00:41 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:00:48 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:00:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:00:50 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:00:50 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:00:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:00:50 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'dict' object has no attribute 'ok'
+04-05-2023 15:00:50 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:00:50 - INFO - 127.0.0.1 - - [04/May/2023 15:00:50] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:01:42 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:01:42 - INFO -  * Restarting with stat
+04-05-2023 15:01:43 - INFO - ENV variables ready
+04-05-2023 15:01:46 - INFO - Connected to DB
+04-05-2023 15:01:49 - INFO - Connected to DB
+04-05-2023 15:01:49 - WARNING -  * Debugger is active!
+04-05-2023 15:01:49 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:02:50 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:02:50 - INFO -  * Restarting with stat
+04-05-2023 15:02:51 - INFO - ENV variables ready
+04-05-2023 15:02:54 - INFO - Connected to DB
+04-05-2023 15:02:57 - INFO - Connected to DB
+04-05-2023 15:02:57 - WARNING -  * Debugger is active!
+04-05-2023 15:02:57 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:03:01 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:03:01 - INFO -  * Restarting with stat
+04-05-2023 15:03:03 - INFO - ENV variables ready
+04-05-2023 15:03:06 - INFO - Connected to DB
+04-05-2023 15:03:09 - INFO - Connected to DB
+04-05-2023 15:03:09 - WARNING -  * Debugger is active!
+04-05-2023 15:03:09 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:03:11 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:03:11 - INFO -  * Restarting with stat
+04-05-2023 15:03:12 - INFO - ENV variables ready
+04-05-2023 15:03:15 - INFO - Connected to DB
+04-05-2023 15:03:18 - INFO - Connected to DB
+04-05-2023 15:03:18 - WARNING -  * Debugger is active!
+04-05-2023 15:03:18 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:03:23 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:03:23 - INFO -  * Restarting with stat
+04-05-2023 15:03:24 - INFO - ENV variables ready
+04-05-2023 15:03:28 - INFO - Connected to DB
+04-05-2023 15:03:31 - INFO - Connected to DB
+04-05-2023 15:03:31 - WARNING -  * Debugger is active!
+04-05-2023 15:03:31 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:03:32 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:03:32 - INFO -  * Restarting with stat
+04-05-2023 15:03:34 - INFO - ENV variables ready
+04-05-2023 15:03:38 - INFO - Connected to DB
+04-05-2023 15:03:41 - INFO - Connected to DB
+04-05-2023 15:03:41 - WARNING -  * Debugger is active!
+04-05-2023 15:03:41 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:03:42 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:03:42 - INFO -  * Restarting with stat
+04-05-2023 15:03:43 - INFO - ENV variables ready
+04-05-2023 15:03:47 - INFO - Connected to DB
+04-05-2023 15:03:51 - INFO - Connected to DB
+04-05-2023 15:03:51 - WARNING -  * Debugger is active!
+04-05-2023 15:03:51 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:03:52 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:03:52 - INFO -  * Restarting with stat
+04-05-2023 15:03:53 - INFO - ENV variables ready
+04-05-2023 15:03:58 - INFO - Connected to DB
+04-05-2023 15:04:01 - INFO - Connected to DB
+04-05-2023 15:04:01 - WARNING -  * Debugger is active!
+04-05-2023 15:04:01 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:04:04 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:04:04 - INFO -  * Restarting with stat
+04-05-2023 15:04:05 - INFO - ENV variables ready
+04-05-2023 15:04:09 - INFO - Connected to DB
+04-05-2023 15:04:13 - INFO - Connected to DB
+04-05-2023 15:04:13 - WARNING -  * Debugger is active!
+04-05-2023 15:04:13 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:04:15 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:04:15 - INFO -  * Restarting with stat
+04-05-2023 15:04:16 - INFO - ENV variables ready
+04-05-2023 15:04:20 - INFO - Connected to DB
+04-05-2023 15:04:23 - INFO - Connected to DB
+04-05-2023 15:04:23 - WARNING -  * Debugger is active!
+04-05-2023 15:04:23 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:04:38 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 15:04:38 - INFO - 127.0.0.1 - - [04/May/2023 15:04:38] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 15:04:51 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:04:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:04:52 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:04:52 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:04:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:04:52 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'dict' object has no attribute 'ok'
+04-05-2023 15:04:52 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:04:52 - INFO - 127.0.0.1 - - [04/May/2023 15:04:52] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:06:02 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:06:03 - INFO -  * Restarting with stat
+04-05-2023 15:06:04 - INFO - ENV variables ready
+04-05-2023 15:06:09 - INFO - ENV variables ready
+04-05-2023 15:06:12 - INFO - Connected to DB
+04-05-2023 15:06:15 - INFO - Connected to DB
+04-05-2023 15:06:15 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:06:15 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:06:15 - INFO -  * Restarting with stat
+04-05-2023 15:06:17 - INFO - ENV variables ready
+04-05-2023 15:06:19 - INFO - Connected to DB
+04-05-2023 15:06:22 - INFO - Connected to DB
+04-05-2023 15:06:22 - WARNING -  * Debugger is active!
+04-05-2023 15:06:22 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:06:25 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:06:26 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:06:26 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:06:26 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:06:27 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:06:27 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'dict' object has no attribute 'ok'
+04-05-2023 15:06:27 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:06:27 - INFO - 127.0.0.1 - - [04/May/2023 15:06:27] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:06:49 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:06:49 - INFO -  * Restarting with stat
+04-05-2023 15:06:50 - INFO - ENV variables ready
+04-05-2023 15:06:53 - INFO - Connected to DB
+04-05-2023 15:06:56 - INFO - Connected to DB
+04-05-2023 15:06:56 - WARNING -  * Debugger is active!
+04-05-2023 15:06:56 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:10:09 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:10:09 - INFO -  * Restarting with stat
+04-05-2023 15:10:10 - INFO - ENV variables ready
+04-05-2023 15:10:13 - INFO - Connected to DB
+04-05-2023 15:10:16 - INFO - Connected to DB
+04-05-2023 15:10:16 - WARNING -  * Debugger is active!
+04-05-2023 15:10:16 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:10:25 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:10:25 - INFO -  * Restarting with stat
+04-05-2023 15:10:26 - INFO - ENV variables ready
+04-05-2023 15:10:29 - INFO - Connected to DB
+04-05-2023 15:10:32 - INFO - Connected to DB
+04-05-2023 15:10:32 - WARNING -  * Debugger is active!
+04-05-2023 15:10:32 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:10:43 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 15:10:43 - INFO - 127.0.0.1 - - [04/May/2023 15:10:43] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 15:10:51 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:10:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:10:52 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:10:52 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:10:53 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:10:53 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'Response' object has no attribute 'get'
+04-05-2023 15:10:53 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:10:53 - INFO - 127.0.0.1 - - [04/May/2023 15:10:53] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:11:51 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:11:51 - INFO -  * Restarting with stat
+04-05-2023 15:11:52 - INFO - ENV variables ready
+04-05-2023 15:11:56 - INFO - Connected to DB
+04-05-2023 15:11:59 - INFO - Connected to DB
+04-05-2023 15:11:59 - WARNING -  * Debugger is active!
+04-05-2023 15:11:59 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:12:02 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:12:02 - INFO -  * Restarting with stat
+04-05-2023 15:12:03 - INFO - ENV variables ready
+04-05-2023 15:12:06 - INFO - Connected to DB
+04-05-2023 15:12:09 - INFO - Connected to DB
+04-05-2023 15:12:09 - WARNING -  * Debugger is active!
+04-05-2023 15:12:09 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:12:13 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:12:14 - INFO -  * Restarting with stat
+04-05-2023 15:12:15 - INFO - ENV variables ready
+04-05-2023 15:12:18 - INFO - Connected to DB
+04-05-2023 15:12:21 - INFO - Connected to DB
+04-05-2023 15:12:21 - WARNING -  * Debugger is active!
+04-05-2023 15:12:21 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:12:22 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:12:22 - INFO -  * Restarting with stat
+04-05-2023 15:12:23 - INFO - ENV variables ready
+04-05-2023 15:12:26 - INFO - Connected to DB
+04-05-2023 15:12:29 - INFO - Connected to DB
+04-05-2023 15:12:29 - WARNING -  * Debugger is active!
+04-05-2023 15:12:29 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:12:34 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:12:35 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:12:35 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:12:35 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:12:36 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:12:36 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - 'dict' object has no attribute 'json'
+04-05-2023 15:12:36 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:12:36 - INFO - 127.0.0.1 - - [04/May/2023 15:12:36] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:14:12 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:14:12 - INFO -  * Restarting with stat
+04-05-2023 15:14:13 - INFO - ENV variables ready
+04-05-2023 15:14:17 - INFO - Connected to DB
+04-05-2023 15:14:19 - INFO - Connected to DB
+04-05-2023 15:14:19 - WARNING -  * Debugger is active!
+04-05-2023 15:14:19 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:14:30 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 15:14:30 - INFO -  * Restarting with stat
+04-05-2023 15:14:31 - INFO - ENV variables ready
+04-05-2023 15:15:07 - INFO - ENV variables ready
+04-05-2023 15:15:10 - INFO - Connected to DB
+04-05-2023 15:15:13 - INFO - Connected to DB
+04-05-2023 15:15:13 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:15:13 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:15:13 - INFO -  * Restarting with stat
+04-05-2023 15:15:14 - INFO - ENV variables ready
+04-05-2023 15:15:17 - INFO - Connected to DB
+04-05-2023 15:15:20 - INFO - Connected to DB
+04-05-2023 15:15:20 - WARNING -  * Debugger is active!
+04-05-2023 15:15:20 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:15:25 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:15:26 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:15:26 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:15:26 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:15:27 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:15:27 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:15:27 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:15:27 - INFO - 127.0.0.1 - - [04/May/2023 15:15:27] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:15:42 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 15:15:42 - INFO - 127.0.0.1 - - [04/May/2023 15:15:42] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 15:19:51 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:19:51 - INFO -  * Restarting with stat
+04-05-2023 15:19:52 - INFO - ENV variables ready
+04-05-2023 15:19:55 - INFO - Connected to DB
+04-05-2023 15:19:58 - INFO - Connected to DB
+04-05-2023 15:19:58 - WARNING -  * Debugger is active!
+04-05-2023 15:19:58 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:20:55 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:20:56 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:20:56 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:20:56 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:20:56 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:20:56 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:20:56 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - fprint() missing 4 required positional arguments: 'process', 'process_state', 'taskId', and 'task_status'
+04-05-2023 15:20:56 - INFO - 127.0.0.1 - - [04/May/2023 15:20:56] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:23:20 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:23:20 - INFO -  * Restarting with stat
+04-05-2023 15:23:21 - INFO - ENV variables ready
+04-05-2023 15:25:00 - INFO - ENV variables ready
+04-05-2023 15:25:03 - INFO - Connected to DB
+04-05-2023 15:25:06 - INFO - Connected to DB
+04-05-2023 15:25:06 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:25:06 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:25:06 - INFO -  * Restarting with stat
+04-05-2023 15:25:07 - INFO - ENV variables ready
+04-05-2023 15:25:10 - INFO - Connected to DB
+04-05-2023 15:25:13 - INFO - Connected to DB
+04-05-2023 15:25:13 - WARNING -  * Debugger is active!
+04-05-2023 15:25:13 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:25:23 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:25:24 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:25:24 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:25:24 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:25:25 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:25:25 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:25:25 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:25:25 - INFO - 127.0.0.1 - - [04/May/2023 15:25:25] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:29:50 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:29:50 - INFO -  * Restarting with stat
+04-05-2023 15:29:51 - INFO - ENV variables ready
+04-05-2023 15:29:54 - INFO - Connected to DB
+04-05-2023 15:29:57 - INFO - Connected to DB
+04-05-2023 15:29:57 - WARNING -  * Debugger is active!
+04-05-2023 15:29:57 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:32:03 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:32:03 - INFO -  * Restarting with stat
+04-05-2023 15:32:04 - INFO - ENV variables ready
+04-05-2023 15:32:07 - INFO - Connected to DB
+04-05-2023 15:32:10 - INFO - Connected to DB
+04-05-2023 15:32:10 - WARNING -  * Debugger is active!
+04-05-2023 15:32:10 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:32:11 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:32:11 - INFO -  * Restarting with stat
+04-05-2023 15:32:12 - INFO - ENV variables ready
+04-05-2023 15:32:15 - INFO - Connected to DB
+04-05-2023 15:32:18 - WARNING -  * Debugger is active!
+04-05-2023 15:32:18 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:32:27 - INFO - ENV variables ready
+04-05-2023 15:32:31 - INFO - Connected to DB
+04-05-2023 15:32:33 - INFO - Connected to DB
+04-05-2023 15:32:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:32:33 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:32:33 - INFO -  * Restarting with stat
+04-05-2023 15:32:34 - INFO - ENV variables ready
+04-05-2023 15:32:37 - INFO - Connected to DB
+04-05-2023 15:32:40 - INFO - Connected to DB
+04-05-2023 15:32:40 - WARNING -  * Debugger is active!
+04-05-2023 15:32:40 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:32:44 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:32:45 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:32:45 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:32:45 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:32:46 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:32:46 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:32:46 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:32:46 - INFO - 127.0.0.1 - - [04/May/2023 15:32:46] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:33:06 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:33:06 - INFO -  * Restarting with stat
+04-05-2023 15:33:08 - INFO - ENV variables ready
+04-05-2023 15:33:11 - INFO - Connected to DB
+04-05-2023 15:33:13 - INFO - Connected to DB
+04-05-2023 15:33:13 - WARNING -  * Debugger is active!
+04-05-2023 15:33:13 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:33:28 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:33:29 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:33:29 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:33:29 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:33:30 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:33:30 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:33:30 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - too many values to unpack (expected 2)
+04-05-2023 15:33:30 - INFO - 127.0.0.1 - - [04/May/2023 15:33:30] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:36:57 - INFO - ENV variables ready
+04-05-2023 15:37:00 - INFO - Connected to DB
+04-05-2023 15:37:03 - INFO - Connected to DB
+04-05-2023 15:37:03 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:37:03 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:37:03 - INFO -  * Restarting with stat
+04-05-2023 15:37:04 - INFO - ENV variables ready
+04-05-2023 15:37:07 - INFO - Connected to DB
+04-05-2023 15:37:10 - INFO - Connected to DB
+04-05-2023 15:37:10 - WARNING -  * Debugger is active!
+04-05-2023 15:37:10 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:37:16 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:37:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:37:16 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:37:16 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:37:17 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:37:17 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:37:17 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:37:17 - INFO - 127.0.0.1 - - [04/May/2023 15:37:17] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:37:58 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:37:58 - INFO -  * Restarting with stat
+04-05-2023 15:37:59 - INFO - ENV variables ready
+04-05-2023 15:38:08 - INFO - ENV variables ready
+04-05-2023 15:38:11 - INFO - Connected to DB
+04-05-2023 15:38:13 - INFO - Connected to DB
+04-05-2023 15:38:13 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:38:13 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:38:13 - INFO -  * Restarting with stat
+04-05-2023 15:38:15 - INFO - ENV variables ready
+04-05-2023 15:38:18 - INFO - Connected to DB
+04-05-2023 15:38:20 - INFO - Connected to DB
+04-05-2023 15:38:20 - WARNING -  * Debugger is active!
+04-05-2023 15:38:20 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:38:28 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:38:29 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:38:29 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:38:29 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:38:31 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:38:31 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:38:31 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:38:31 - INFO - 127.0.0.1 - - [04/May/2023 15:38:31] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:38:41 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 15:38:41 - INFO - 127.0.0.1 - - [04/May/2023 15:38:41] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 15:39:06 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:39:06 - INFO -  * Restarting with stat
+04-05-2023 15:39:07 - INFO - ENV variables ready
+04-05-2023 15:39:10 - INFO - Connected to DB
+04-05-2023 15:39:13 - INFO - Connected to DB
+04-05-2023 15:39:13 - WARNING -  * Debugger is active!
+04-05-2023 15:39:13 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:39:15 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:39:15 - INFO -  * Restarting with stat
+04-05-2023 15:39:17 - INFO - ENV variables ready
+04-05-2023 15:39:20 - INFO - Connected to DB
+04-05-2023 15:39:22 - INFO - Connected to DB
+04-05-2023 15:39:22 - WARNING -  * Debugger is active!
+04-05-2023 15:39:22 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:43:11 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:43:11 - INFO -  * Restarting with stat
+04-05-2023 15:43:13 - INFO - ENV variables ready
+04-05-2023 15:43:16 - INFO - Connected to DB
+04-05-2023 15:43:19 - INFO - Connected to DB
+04-05-2023 15:43:19 - WARNING -  * Debugger is active!
+04-05-2023 15:43:19 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:43:21 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:43:21 - INFO -  * Restarting with stat
+04-05-2023 15:43:23 - INFO - ENV variables ready
+04-05-2023 15:43:35 - INFO - ENV variables ready
+04-05-2023 15:43:38 - INFO - Connected to DB
+04-05-2023 15:43:41 - INFO - Connected to DB
+04-05-2023 15:43:41 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:43:41 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:43:41 - INFO -  * Restarting with stat
+04-05-2023 15:43:42 - INFO - ENV variables ready
+04-05-2023 15:43:45 - INFO - Connected to DB
+04-05-2023 15:43:48 - INFO - Connected to DB
+04-05-2023 15:43:48 - WARNING -  * Debugger is active!
+04-05-2023 15:43:48 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:43:51 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:43:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:43:52 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:43:52 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:43:53 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:43:53 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:43:53 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:43:53 - INFO - 127.0.0.1 - - [04/May/2023 15:43:53] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:44:11 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:44:11 - INFO -  * Restarting with stat
+04-05-2023 15:44:12 - INFO - ENV variables ready
+04-05-2023 15:44:16 - INFO - Connected to DB
+04-05-2023 15:44:18 - INFO - Connected to DB
+04-05-2023 15:44:18 - WARNING -  * Debugger is active!
+04-05-2023 15:44:18 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:44:40 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:44:41 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:44:41 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:44:41 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:44:42 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:44:42 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:44:42 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:44:42 - INFO - 127.0.0.1 - - [04/May/2023 15:44:42] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:45:43 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:45:44 - INFO -  * Restarting with stat
+04-05-2023 15:45:45 - INFO - ENV variables ready
+04-05-2023 15:45:48 - INFO - Connected to DB
+04-05-2023 15:45:51 - INFO - Connected to DB
+04-05-2023 15:45:51 - WARNING -  * Debugger is active!
+04-05-2023 15:45:51 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:45:53 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:45:53 - INFO -  * Restarting with stat
+04-05-2023 15:45:54 - INFO - ENV variables ready
+04-05-2023 15:45:57 - INFO - Connected to DB
+04-05-2023 15:46:00 - INFO - Connected to DB
+04-05-2023 15:46:00 - WARNING -  * Debugger is active!
+04-05-2023 15:46:00 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:46:14 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:46:15 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:46:15 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:46:15 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:46:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:46:16 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:46:17 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:46:17 - INFO - 127.0.0.1 - - [04/May/2023 15:46:17] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:49:23 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:49:23 - INFO -  * Restarting with stat
+04-05-2023 15:49:24 - INFO - ENV variables ready
+04-05-2023 15:49:31 - INFO - ENV variables ready
+04-05-2023 15:49:34 - INFO - Connected to DB
+04-05-2023 15:49:37 - INFO - Connected to DB
+04-05-2023 15:49:37 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:49:37 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:49:37 - INFO -  * Restarting with stat
+04-05-2023 15:49:38 - INFO - ENV variables ready
+04-05-2023 15:49:41 - INFO - Connected to DB
+04-05-2023 15:49:44 - INFO - Connected to DB
+04-05-2023 15:49:44 - WARNING -  * Debugger is active!
+04-05-2023 15:49:44 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:49:49 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:49:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:49:50 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:49:50 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:49:51 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:49:51 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:49:52 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:49:52 - INFO - 127.0.0.1 - - [04/May/2023 15:49:52] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:50:20 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:50:20 - INFO -  * Restarting with stat
+04-05-2023 15:50:21 - INFO - ENV variables ready
+04-05-2023 15:50:24 - INFO - Connected to DB
+04-05-2023 15:50:27 - INFO - Connected to DB
+04-05-2023 15:50:27 - WARNING -  * Debugger is active!
+04-05-2023 15:50:27 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:50:35 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:50:35 - INFO -  * Restarting with stat
+04-05-2023 15:50:37 - INFO - ENV variables ready
+04-05-2023 15:50:39 - INFO - ENV variables ready
+04-05-2023 15:50:43 - INFO - Connected to DB
+04-05-2023 15:50:45 - INFO - Connected to DB
+04-05-2023 15:50:45 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:50:45 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:50:45 - INFO -  * Restarting with stat
+04-05-2023 15:50:46 - INFO - ENV variables ready
+04-05-2023 15:50:50 - INFO - Connected to DB
+04-05-2023 15:50:52 - INFO - Connected to DB
+04-05-2023 15:50:52 - WARNING -  * Debugger is active!
+04-05-2023 15:50:52 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:51:03 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:51:03 - INFO -  * Restarting with stat
+04-05-2023 15:51:04 - INFO - ENV variables ready
+04-05-2023 15:51:07 - INFO - Connected to DB
+04-05-2023 15:51:10 - INFO - Connected to DB
+04-05-2023 15:51:10 - WARNING -  * Debugger is active!
+04-05-2023 15:51:10 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:51:11 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:51:11 - INFO -  * Restarting with stat
+04-05-2023 15:51:13 - INFO - ENV variables ready
+04-05-2023 15:51:16 - INFO - Connected to DB
+04-05-2023 15:51:19 - INFO - Connected to DB
+04-05-2023 15:51:19 - WARNING -  * Debugger is active!
+04-05-2023 15:51:19 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:51:28 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:51:29 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:51:29 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:51:29 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:51:30 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:51:30 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:51:31 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:51:31 - INFO - 127.0.0.1 - - [04/May/2023 15:51:31] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:52:17 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:52:17 - INFO -  * Restarting with stat
+04-05-2023 15:52:18 - INFO - ENV variables ready
+04-05-2023 15:52:22 - INFO - Connected to DB
+04-05-2023 15:52:24 - INFO - Connected to DB
+04-05-2023 15:52:24 - WARNING -  * Debugger is active!
+04-05-2023 15:52:24 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:52:25 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:52:25 - INFO -  * Restarting with stat
+04-05-2023 15:52:27 - INFO - ENV variables ready
+04-05-2023 15:52:30 - INFO - Connected to DB
+04-05-2023 15:52:32 - INFO - Connected to DB
+04-05-2023 15:52:32 - WARNING -  * Debugger is active!
+04-05-2023 15:52:32 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:52:49 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:52:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:52:50 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:52:50 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:52:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:52:50 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:52:52 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:52:52 - INFO - 127.0.0.1 - - [04/May/2023 15:52:52] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:53:05 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:53:05 - INFO -  * Restarting with stat
+04-05-2023 15:53:06 - INFO - ENV variables ready
+04-05-2023 15:53:09 - INFO - Connected to DB
+04-05-2023 15:53:12 - INFO - Connected to DB
+04-05-2023 15:53:12 - WARNING -  * Debugger is active!
+04-05-2023 15:53:12 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:53:21 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:53:22 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:53:22 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:53:22 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:53:22 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:53:22 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:53:24 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:53:24 - INFO - 127.0.0.1 - - [04/May/2023 15:53:24] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:55:02 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:55:02 - INFO -  * Restarting with stat
+04-05-2023 15:55:03 - INFO - ENV variables ready
+04-05-2023 15:55:06 - INFO - Connected to DB
+04-05-2023 15:55:09 - INFO - Connected to DB
+04-05-2023 15:55:09 - WARNING -  * Debugger is active!
+04-05-2023 15:55:09 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:55:16 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:55:17 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:55:17 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:55:17 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:55:18 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:55:18 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:55:19 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:55:19 - INFO - 127.0.0.1 - - [04/May/2023 15:55:19] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:56:41 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:56:41 - INFO -  * Restarting with stat
+04-05-2023 15:56:43 - INFO - ENV variables ready
+04-05-2023 15:56:46 - INFO - Connected to DB
+04-05-2023 15:56:49 - INFO - Connected to DB
+04-05-2023 15:56:49 - WARNING -  * Debugger is active!
+04-05-2023 15:56:49 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:56:52 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:56:52 - INFO -  * Restarting with stat
+04-05-2023 15:56:53 - INFO - ENV variables ready
+04-05-2023 15:56:56 - INFO - Connected to DB
+04-05-2023 15:56:59 - INFO - Connected to DB
+04-05-2023 15:56:59 - WARNING -  * Debugger is active!
+04-05-2023 15:56:59 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:57:01 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 15:57:01 - INFO -  * Restarting with stat
+04-05-2023 15:57:02 - INFO - ENV variables ready
+04-05-2023 15:57:29 - INFO - ENV variables ready
+04-05-2023 15:57:33 - INFO - Connected to DB
+04-05-2023 15:57:35 - INFO - Connected to DB
+04-05-2023 15:57:35 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 15:57:35 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 15:57:35 - INFO -  * Restarting with stat
+04-05-2023 15:57:36 - INFO - ENV variables ready
+04-05-2023 15:57:40 - INFO - Connected to DB
+04-05-2023 15:57:42 - INFO - Connected to DB
+04-05-2023 15:57:42 - WARNING -  * Debugger is active!
+04-05-2023 15:57:42 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 15:57:47 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 15:57:47 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 15:57:47 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:57:47 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 15:57:48 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 15:57:48 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 15:57:49 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 15:57:49 - INFO - 127.0.0.1 - - [04/May/2023 15:57:49] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 15:58:20 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+04-05-2023 15:58:20 - INFO - 127.0.0.1 - - [04/May/2023 15:58:20] "POST /getRequests HTTP/1.1" 200 -
+04-05-2023 16:24:41 - INFO - ENV variables ready
+04-05-2023 16:26:07 - INFO - ENV variables ready
+04-05-2023 16:26:10 - INFO - Connected to DB
+04-05-2023 16:26:12 - INFO - Connected to DB
+04-05-2023 16:26:12 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:26:12 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:26:12 - INFO -  * Restarting with stat
+04-05-2023 16:26:14 - INFO - ENV variables ready
+04-05-2023 16:26:17 - INFO - Connected to DB
+04-05-2023 16:26:19 - INFO - Connected to DB
+04-05-2023 16:26:19 - WARNING -  * Debugger is active!
+04-05-2023 16:26:19 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:26:26 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:26:27 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:26:27 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:26:27 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:26:27 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:26:27 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:26:27 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'Exception' object is not subscriptable
+04-05-2023 16:26:27 - INFO - 127.0.0.1 - - [04/May/2023 16:26:27] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:26:50 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 16:26:50 - INFO -  * Restarting with stat
+04-05-2023 16:26:51 - INFO - ENV variables ready
+04-05-2023 16:26:54 - INFO - Connected to DB
+04-05-2023 16:26:57 - WARNING -  * Debugger is active!
+04-05-2023 16:26:57 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:27:01 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - name 'conn_pool' is not defined
+04-05-2023 16:27:01 - INFO - 127.0.0.1 - - [04/May/2023 16:27:01] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:27:14 - INFO - ENV variables ready
+04-05-2023 16:27:17 - INFO - Connected to DB
+04-05-2023 16:27:20 - INFO - Connected to DB
+04-05-2023 16:27:20 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:27:20 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:27:20 - INFO -  * Restarting with stat
+04-05-2023 16:27:21 - INFO - ENV variables ready
+04-05-2023 16:27:24 - INFO - Connected to DB
+04-05-2023 16:27:27 - INFO - Connected to DB
+04-05-2023 16:27:27 - WARNING -  * Debugger is active!
+04-05-2023 16:27:27 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:27:29 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:27:30 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:27:30 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:27:30 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:27:30 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:27:30 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:27:31 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 16:27:31 - INFO - 127.0.0.1 - - [04/May/2023 16:27:31] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:28:13 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 16:28:13 - INFO -  * Restarting with stat
+04-05-2023 16:28:14 - INFO - ENV variables ready
+04-05-2023 16:28:28 - INFO - ENV variables ready
+04-05-2023 16:28:32 - INFO - Connected to DB
+04-05-2023 16:28:34 - INFO - Connected to DB
+04-05-2023 16:28:34 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:28:34 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:28:34 - INFO -  * Restarting with stat
+04-05-2023 16:28:35 - INFO - ENV variables ready
+04-05-2023 16:28:38 - INFO - Connected to DB
+04-05-2023 16:28:41 - INFO - Connected to DB
+04-05-2023 16:28:41 - WARNING -  * Debugger is active!
+04-05-2023 16:28:41 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:28:44 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:28:45 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:28:45 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:28:45 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:28:45 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:28:45 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:28:46 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 16:28:46 - INFO - 127.0.0.1 - - [04/May/2023 16:28:46] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:29:15 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 16:29:15 - INFO -  * Restarting with stat
+04-05-2023 16:29:16 - INFO - ENV variables ready
+04-05-2023 16:33:23 - INFO - ENV variables ready
+04-05-2023 16:33:33 - INFO - ENV variables ready
+04-05-2023 16:33:37 - INFO - Connected to DB
+04-05-2023 16:33:39 - INFO - Connected to DB
+04-05-2023 16:33:39 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:33:39 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:33:39 - INFO -  * Restarting with stat
+04-05-2023 16:33:40 - INFO - ENV variables ready
+04-05-2023 16:33:44 - INFO - Connected to DB
+04-05-2023 16:33:46 - INFO - Connected to DB
+04-05-2023 16:33:46 - WARNING -  * Debugger is active!
+04-05-2023 16:33:46 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:33:48 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:33:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:33:50 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:33:50 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:33:50 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:33:50 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:33:52 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+04-05-2023 16:33:52 - INFO - 127.0.0.1 - - [04/May/2023 16:33:52] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:36:01 - INFO - ENV variables ready
+04-05-2023 16:36:04 - INFO - Connected to DB
+04-05-2023 16:36:07 - INFO - Connected to DB
+04-05-2023 16:36:07 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:36:07 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:36:07 - INFO -  * Restarting with stat
+04-05-2023 16:36:08 - INFO - ENV variables ready
+04-05-2023 16:36:11 - INFO - Connected to DB
+04-05-2023 16:36:14 - INFO - Connected to DB
+04-05-2023 16:36:14 - WARNING -  * Debugger is active!
+04-05-2023 16:36:14 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:36:15 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:36:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:36:16 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:36:16 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:36:17 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:36:17 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:36:17 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - dictionary update sequence element #0 has length 6; 2 is required
+04-05-2023 16:36:17 - INFO - 127.0.0.1 - - [04/May/2023 16:36:17] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:36:43 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 16:36:43 - INFO -  * Restarting with stat
+04-05-2023 16:36:44 - INFO - ENV variables ready
+04-05-2023 16:36:48 - INFO - Connected to DB
+04-05-2023 16:36:50 - INFO - Connected to DB
+04-05-2023 16:36:50 - WARNING -  * Debugger is active!
+04-05-2023 16:36:50 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:37:29 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 16:37:29 - INFO -  * Restarting with stat
+04-05-2023 16:37:30 - INFO - ENV variables ready
+04-05-2023 16:42:58 - INFO - ENV variables ready
+04-05-2023 16:43:02 - INFO - Connected to DB
+04-05-2023 16:43:04 - INFO - Connected to DB
+04-05-2023 16:43:04 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:43:04 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:43:04 - INFO -  * Restarting with stat
+04-05-2023 16:43:05 - INFO - ENV variables ready
+04-05-2023 16:43:09 - INFO - Connected to DB
+04-05-2023 16:43:11 - INFO - Connected to DB
+04-05-2023 16:43:11 - WARNING -  * Debugger is active!
+04-05-2023 16:43:11 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:43:14 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:43:15 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:43:15 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:43:15 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:43:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:43:16 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:43:16 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+04-05-2023 16:43:16 - INFO - 127.0.0.1 - - [04/May/2023 16:43:16] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:43:34 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 16:43:34 - INFO -  * Restarting with stat
+04-05-2023 16:43:35 - INFO - ENV variables ready
+04-05-2023 16:43:38 - INFO - Connected to DB
+04-05-2023 16:43:41 - INFO - Connected to DB
+04-05-2023 16:43:41 - WARNING -  * Debugger is active!
+04-05-2023 16:43:41 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:43:44 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:43:45 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:43:45 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:43:45 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:43:46 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:43:46 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:43:46 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - 'Exception' object is not subscriptable
+04-05-2023 16:43:46 - INFO - 127.0.0.1 - - [04/May/2023 16:43:46] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:44:00 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 16:44:00 - INFO -  * Restarting with stat
+04-05-2023 16:44:01 - INFO - ENV variables ready
+04-05-2023 16:44:04 - INFO - Connected to DB
+04-05-2023 16:44:07 - INFO - Connected to DB
+04-05-2023 16:44:07 - WARNING -  * Debugger is active!
+04-05-2023 16:44:07 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:44:20 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+04-05-2023 16:44:20 - INFO -  * Restarting with stat
+04-05-2023 16:44:22 - INFO - ENV variables ready
+04-05-2023 16:44:25 - INFO - Connected to DB
+04-05-2023 16:44:27 - INFO - Connected to DB
+04-05-2023 16:44:27 - WARNING -  * Debugger is active!
+04-05-2023 16:44:27 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:44:37 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+04-05-2023 16:44:37 - INFO -  * Restarting with stat
+04-05-2023 16:44:38 - INFO - ENV variables ready
+04-05-2023 16:44:41 - INFO - Connected to DB
+04-05-2023 16:44:44 - INFO - Connected to DB
+04-05-2023 16:44:44 - WARNING -  * Debugger is active!
+04-05-2023 16:44:44 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:45:03 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:45:04 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:45:04 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:45:04 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:45:05 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:45:05 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:45:05 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+04-05-2023 16:45:05 - INFO - 127.0.0.1 - - [04/May/2023 16:45:05] "POST /approveRequest HTTP/1.1" 200 -
+04-05-2023 16:45:20 - INFO - ENV variables ready
+04-05-2023 16:45:23 - INFO - Connected to DB
+04-05-2023 16:45:26 - INFO - Connected to DB
+04-05-2023 16:45:26 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+04-05-2023 16:45:26 - INFO - [33mPress CTRL+C to quit[0m
+04-05-2023 16:45:26 - INFO -  * Restarting with stat
+04-05-2023 16:45:27 - INFO - ENV variables ready
+04-05-2023 16:45:30 - INFO - Connected to DB
+04-05-2023 16:45:33 - INFO - Connected to DB
+04-05-2023 16:45:33 - WARNING -  * Debugger is active!
+04-05-2023 16:45:33 - INFO -  * Debugger PIN: 593-770-232
+04-05-2023 16:45:34 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+04-05-2023 16:45:35 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+04-05-2023 16:45:35 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:45:35 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+04-05-2023 16:45:36 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+04-05-2023 16:45:36 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+04-05-2023 16:45:36 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+04-05-2023 16:45:36 - INFO - 127.0.0.1 - - [04/May/2023 16:45:36] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:12:21 - INFO - ENV variables ready
+08-05-2023 16:12:25 - INFO - Connected to DB
+08-05-2023 16:12:28 - INFO - Connected to DB
+08-05-2023 16:12:28 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-05-2023 16:12:28 - INFO - [33mPress CTRL+C to quit[0m
+08-05-2023 16:12:28 - INFO -  * Restarting with stat
+08-05-2023 16:12:29 - INFO - ENV variables ready
+08-05-2023 16:12:32 - INFO - Connected to DB
+08-05-2023 16:12:35 - INFO - Connected to DB
+08-05-2023 16:12:35 - WARNING -  * Debugger is active!
+08-05-2023 16:12:35 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:15:18 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+08-05-2023 16:15:18 - INFO -  * Restarting with stat
+08-05-2023 16:15:20 - INFO - ENV variables ready
+08-05-2023 16:15:23 - INFO - Connected to DB
+08-05-2023 16:15:26 - INFO - Connected to DB
+08-05-2023 16:15:26 - WARNING -  * Debugger is active!
+08-05-2023 16:15:26 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:15:35 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:15:35 - INFO - 127.0.0.1 - - [08/May/2023 16:15:35] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:17:03 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+08-05-2023 16:17:04 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:17:04 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:17:04 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:17:04 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+08-05-2023 16:17:04 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+08-05-2023 16:17:04 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+08-05-2023 16:17:04 - INFO - 127.0.0.1 - - [08/May/2023 16:17:04] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:20:03 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+08-05-2023 16:20:03 - INFO -  * Restarting with stat
+08-05-2023 16:20:04 - INFO - ENV variables ready
+08-05-2023 16:20:07 - INFO - Connected to DB
+08-05-2023 16:20:10 - INFO - Connected to DB
+08-05-2023 16:20:10 - WARNING -  * Debugger is active!
+08-05-2023 16:20:10 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:20:45 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+08-05-2023 16:20:45 - INFO -  * Restarting with stat
+08-05-2023 16:20:46 - INFO - ENV variables ready
+08-05-2023 16:20:49 - INFO - Connected to DB
+08-05-2023 16:20:52 - INFO - Connected to DB
+08-05-2023 16:20:52 - WARNING -  * Debugger is active!
+08-05-2023 16:20:52 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:21:06 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+08-05-2023 16:21:06 - INFO -  * Restarting with stat
+08-05-2023 16:21:07 - INFO - ENV variables ready
+08-05-2023 16:21:10 - INFO - Connected to DB
+08-05-2023 16:21:12 - INFO - Connected to DB
+08-05-2023 16:21:12 - WARNING -  * Debugger is active!
+08-05-2023 16:21:13 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:21:15 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+08-05-2023 16:21:15 - INFO -  * Restarting with stat
+08-05-2023 16:21:16 - INFO - ENV variables ready
+08-05-2023 16:21:19 - INFO - Connected to DB
+08-05-2023 16:21:21 - INFO - Connected to DB
+08-05-2023 16:21:21 - WARNING -  * Debugger is active!
+08-05-2023 16:21:21 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:21:38 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\pcloudapis.py', reloading
+08-05-2023 16:21:38 - INFO -  * Restarting with stat
+08-05-2023 16:21:39 - INFO - ENV variables ready
+08-05-2023 16:21:42 - INFO - Connected to DB
+08-05-2023 16:21:45 - INFO - Connected to DB
+08-05-2023 16:21:45 - WARNING -  * Debugger is active!
+08-05-2023 16:21:45 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:22:00 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+08-05-2023 16:22:01 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:22:01 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:22:01 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:22:02 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+08-05-2023 16:22:02 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+08-05-2023 16:22:03 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:22:03 - INFO - 127.0.0.1 - - [08/May/2023 16:22:03] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:22:25 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:22:25 - INFO - 127.0.0.1 - - [08/May/2023 16:22:25] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:23:42 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:23:42 - INFO -  * Restarting with stat
+08-05-2023 16:23:43 - INFO - ENV variables ready
+08-05-2023 16:23:46 - INFO - Connected to DB
+08-05-2023 16:23:48 - INFO - Connected to DB
+08-05-2023 16:23:48 - WARNING -  * Debugger is active!
+08-05-2023 16:23:48 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:23:50 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:23:50 - INFO -  * Restarting with stat
+08-05-2023 16:23:51 - INFO - ENV variables ready
+08-05-2023 16:23:54 - INFO - Connected to DB
+08-05-2023 16:23:56 - INFO - Connected to DB
+08-05-2023 16:23:56 - WARNING -  * Debugger is active!
+08-05-2023 16:23:56 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:23:58 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:23:58 - INFO -  * Restarting with stat
+08-05-2023 16:24:00 - INFO - ENV variables ready
+08-05-2023 16:24:02 - INFO - Connected to DB
+08-05-2023 16:24:05 - INFO - Connected to DB
+08-05-2023 16:24:05 - WARNING -  * Debugger is active!
+08-05-2023 16:24:05 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:24:07 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:24:07 - INFO -  * Restarting with stat
+08-05-2023 16:24:08 - INFO - ENV variables ready
+08-05-2023 16:24:11 - INFO - Connected to DB
+08-05-2023 16:24:14 - INFO - Connected to DB
+08-05-2023 16:24:14 - WARNING -  * Debugger is active!
+08-05-2023 16:24:14 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:24:16 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:24:16 - INFO -  * Restarting with stat
+08-05-2023 16:24:17 - INFO - ENV variables ready
+08-05-2023 16:24:20 - INFO - Connected to DB
+08-05-2023 16:24:23 - INFO - Connected to DB
+08-05-2023 16:24:23 - WARNING -  * Debugger is active!
+08-05-2023 16:24:23 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:25:01 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:25:01 - INFO -  * Restarting with stat
+08-05-2023 16:25:02 - INFO - ENV variables ready
+08-05-2023 16:25:05 - INFO - Connected to DB
+08-05-2023 16:25:08 - INFO - Connected to DB
+08-05-2023 16:25:08 - WARNING -  * Debugger is active!
+08-05-2023 16:25:08 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:25:25 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:25:25 - INFO -  * Restarting with stat
+08-05-2023 16:25:26 - INFO - ENV variables ready
+08-05-2023 16:26:30 - INFO - ENV variables ready
+08-05-2023 16:26:33 - INFO - Connected to DB
+08-05-2023 16:26:36 - INFO - Connected to DB
+08-05-2023 16:26:36 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-05-2023 16:26:36 - INFO - [33mPress CTRL+C to quit[0m
+08-05-2023 16:26:36 - INFO -  * Restarting with stat
+08-05-2023 16:26:37 - INFO - ENV variables ready
+08-05-2023 16:26:40 - INFO - Connected to DB
+08-05-2023 16:26:42 - INFO - Connected to DB
+08-05-2023 16:26:42 - WARNING -  * Debugger is active!
+08-05-2023 16:26:42 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:26:53 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+08-05-2023 16:26:54 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:26:54 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:26:54 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:26:55 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+08-05-2023 16:26:55 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+08-05-2023 16:26:56 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:26:56 - INFO - 127.0.0.1 - - [08/May/2023 16:26:56] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:27:33 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:27:33 - INFO - 127.0.0.1 - - [08/May/2023 16:27:33] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:31:39 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:31:39 - INFO -  * Restarting with stat
+08-05-2023 16:31:40 - INFO - ENV variables ready
+08-05-2023 16:31:44 - INFO - Connected to DB
+08-05-2023 16:31:46 - INFO - Connected to DB
+08-05-2023 16:31:46 - WARNING -  * Debugger is active!
+08-05-2023 16:31:46 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:31:48 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:31:48 - INFO -  * Restarting with stat
+08-05-2023 16:31:50 - INFO - ENV variables ready
+08-05-2023 16:31:53 - INFO - Connected to DB
+08-05-2023 16:31:55 - INFO - Connected to DB
+08-05-2023 16:31:55 - WARNING -  * Debugger is active!
+08-05-2023 16:31:55 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:33:50 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+08-05-2023 16:33:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:33:52 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:33:52 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:33:52 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 400 318
+08-05-2023 16:33:52 - ERROR - UPDATE_PUBLIC_IPS Msg: Failed to update public Ips - {'Api': '/tenants/v1/customer_id/config', 'api_status': 'NOTOK', 'status': 400, 'svcMessage': "CIDR '66.32.54.1/32' and '66.32.54.1/32' are overlapping", 'errorCategory': 'USER_INPUT_ERROR', 'error': 'ApiError'}
+08-05-2023 16:33:54 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:33:54 - INFO - 127.0.0.1 - - [08/May/2023 16:33:54] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:36:42 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+08-05-2023 16:36:42 - INFO - 127.0.0.1 - - [08/May/2023 16:36:42] "POST /insertIntoDatabase HTTP/1.1" 200 -
+08-05-2023 16:36:50 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:36:50 - INFO - 127.0.0.1 - - [08/May/2023 16:36:50] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:37:03 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:37:03 - INFO - 127.0.0.1 - - [08/May/2023 16:37:03] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:39:28 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:39:28 - INFO - 127.0.0.1 - - [08/May/2023 16:39:28] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:40:54 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:40:54 - INFO -  * Restarting with stat
+08-05-2023 16:40:55 - INFO - ENV variables ready
+08-05-2023 16:40:58 - INFO - Connected to DB
+08-05-2023 16:41:01 - INFO - Connected to DB
+08-05-2023 16:41:01 - WARNING -  * Debugger is active!
+08-05-2023 16:41:01 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:41:32 - INFO -  * Detected change in 'C:\\WORK\\acee\\acee_portal_automation_old\\ace_auto_all\\backend2\\backend\\helper2mod1.py', reloading
+08-05-2023 16:41:32 - INFO -  * Restarting with stat
+08-05-2023 16:41:33 - INFO - ENV variables ready
+08-05-2023 16:41:44 - INFO - ENV variables ready
+08-05-2023 16:41:47 - INFO - Connected to DB
+08-05-2023 16:41:50 - INFO - Connected to DB
+08-05-2023 16:41:50 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-05-2023 16:41:50 - INFO - [33mPress CTRL+C to quit[0m
+08-05-2023 16:41:50 - INFO -  * Restarting with stat
+08-05-2023 16:41:51 - INFO - ENV variables ready
+08-05-2023 16:41:54 - INFO - Connected to DB
+08-05-2023 16:41:57 - INFO - Connected to DB
+08-05-2023 16:41:57 - WARNING -  * Debugger is active!
+08-05-2023 16:41:57 - INFO -  * Debugger PIN: 593-770-232
+08-05-2023 16:42:08 - DEBUG - Starting new HTTPS connection (1): console.privilegecloud.cyberark.com:443
+08-05-2023 16:42:09 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:42:09 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:42:09 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:42:11 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 202 809
+08-05-2023 16:42:12 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:42:12 - INFO - 127.0.0.1 - - [08/May/2023 16:42:12] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:42:53 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+08-05-2023 16:42:53 - INFO - 127.0.0.1 - - [08/May/2023 16:42:53] "POST /insertIntoDatabase HTTP/1.1" 200 -
+08-05-2023 16:42:57 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:42:57 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:43:02 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:43:02 - INFO - 127.0.0.1 - - [08/May/2023 16:43:02] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:43:31 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:43:31 - INFO - 127.0.0.1 - - [08/May/2023 16:43:31] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:43:58 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:43:58 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:44:59 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:44:59 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:45:59 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:45:59 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:46:04 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:46:04 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:46:04 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - 873ac79f-7154-479c-9f86-480ed0cb80cc
+08-05-2023 16:46:06 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/873ac79f-7154-479c-9f86-480ed0cb80cc/config HTTP/1.1" 202 830
+08-05-2023 16:46:10 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:46:11 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:46:20 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+08-05-2023 16:46:20 - INFO - 127.0.0.1 - - [08/May/2023 16:46:20] "POST /insertIntoDatabase HTTP/1.1" 200 -
+08-05-2023 16:46:33 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+08-05-2023 16:46:33 - INFO - GET_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - d33962a1-05e5-4497-b776-58e93718d274
+08-05-2023 16:46:33 - INFO - UPDATE_PUBLIC_IPS MSG: Retrieve public IPs SUCCESSFUL - d33962a1-05e5-4497-b776-58e93718d274
+08-05-2023 16:46:34 - DEBUG - https://console.privilegecloud.cyberark.com:443 "PATCH /tenants/v1/d33962a1-05e5-4497-b776-58e93718d274/config HTTP/1.1" 202 718
+08-05-2023 16:46:38 - INFO - API: /approveRequest MSG: Data recevied from DB Successfully.!
+08-05-2023 16:46:38 - INFO - 127.0.0.1 - - [08/May/2023 16:46:38] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 16:46:52 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:46:52 - INFO - 127.0.0.1 - - [08/May/2023 16:46:52] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 16:47:11 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:47:11 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:47:12 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+08-05-2023 16:47:12 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:48:13 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:48:13 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:48:14 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+08-05-2023 16:48:14 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:49:14 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:49:14 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:49:15 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+08-05-2023 16:49:15 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:50:15 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:50:15 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:50:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+08-05-2023 16:50:16 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:51:16 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=873ac79f-7154-479c-9f86-480ed0cb80cc HTTP/1.1" 200 None
+08-05-2023 16:51:17 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:51:22 - DEBUG - https://console.privilegecloud.cyberark.com:443 "GET /tenants/v1/tasks?mainObjectId=d33962a1-05e5-4497-b776-58e93718d274 HTTP/1.1" 200 None
+08-05-2023 16:51:22 - INFO - GET_TASK_STATUS MSG: Task status fetch SUCCESSFUL
+08-05-2023 16:54:54 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 16:54:54 - INFO - 127.0.0.1 - - [08/May/2023 16:54:54] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:09:30 - INFO - API: /insertIntoDatabase MSG: Data added successfully
+08-05-2023 17:09:30 - INFO - 127.0.0.1 - - [08/May/2023 17:09:30] "POST /insertIntoDatabase HTTP/1.1" 200 -
+08-05-2023 17:09:37 - INFO - API: /getRequests MSG: Data retrieved from database successfully!
+08-05-2023 17:09:37 - INFO - 127.0.0.1 - - [08/May/2023 17:09:37] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:09:45 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:09:45 - INFO - 127.0.0.1 - - [08/May/2023 17:09:45] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 17:09:49 - ERROR - API: /approveRequest MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:09:49 - INFO - 127.0.0.1 - - [08/May/2023 17:09:49] "POST /approveRequest HTTP/1.1" 200 -
+08-05-2023 17:12:17 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:12:17 - INFO - 127.0.0.1 - - [08/May/2023 17:12:17] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:22:22 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:22:22 - INFO - 127.0.0.1 - - [08/May/2023 17:22:22] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:22:23 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:22:23 - INFO - 127.0.0.1 - - [08/May/2023 17:22:23] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:23:04 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:23:04 - INFO - 127.0.0.1 - - [08/May/2023 17:23:04] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:23:05 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:23:05 - INFO - 127.0.0.1 - - [08/May/2023 17:23:05] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:25:11 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:25:11 - INFO - 127.0.0.1 - - [08/May/2023 17:25:11] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:25:12 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:25:12 - INFO - 127.0.0.1 - - [08/May/2023 17:25:12] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:25:12 - ERROR - API: /getRequests MSG: Error occured while retrieving data from the database - connection pool exhausted
+08-05-2023 17:25:12 - INFO - 127.0.0.1 - - [08/May/2023 17:25:12] "POST /getRequests HTTP/1.1" 200 -
+08-05-2023 17:25:22 - ERROR - API: insertIntoDatabase MSG: Error while adding data to database - connection pool exhausted
+08-05-2023 17:25:22 - INFO - 127.0.0.1 - - [08/May/2023 17:25:22] "POST /insertIntoDatabase HTTP/1.1" 200 -
+08-05-2023 17:59:38 - INFO - ENV variables ready
+08-05-2023 17:59:39 - INFO - Connected to DB
+08-05-2023 17:59:39 - INFO - Connected to DB
+08-05-2023 17:59:39 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+08-05-2023 17:59:39 - INFO - [33mPress CTRL+C to quit[0m
+08-05-2023 17:59:39 - INFO -  * Restarting with stat
+08-05-2023 17:59:40 - INFO - ENV variables ready
+08-05-2023 17:59:40 - INFO - Connected to DB
+08-05-2023 17:59:41 - INFO - Connected to DB
+08-05-2023 17:59:41 - WARNING -  * Debugger is active!
+08-05-2023 17:59:41 - INFO -  * Debugger PIN: 641-593-786
+08-05-2023 18:06:22 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+08-05-2023 18:06:22 - INFO -  * Restarting with stat
+08-05-2023 18:06:23 - INFO - ENV variables ready
+08-05-2023 18:06:23 - INFO - Connected to DB
+08-05-2023 18:06:23 - INFO - Connected to DB
+08-05-2023 18:06:23 - WARNING -  * Debugger is active!
+08-05-2023 18:06:23 - INFO -  * Debugger PIN: 641-593-786
+08-05-2023 18:08:22 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+08-05-2023 18:08:22 - INFO -  * Restarting with stat
+08-05-2023 18:08:23 - INFO - ENV variables ready
+08-05-2023 18:08:23 - INFO - Connected to DB
+08-05-2023 18:08:23 - INFO - Connected to DB
+08-05-2023 18:08:23 - WARNING -  * Debugger is active!
+08-05-2023 18:08:23 - INFO -  * Debugger PIN: 641-593-786
+08-05-2023 18:09:03 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2.py', reloading
+08-05-2023 18:09:03 - INFO -  * Restarting with stat
+08-05-2023 18:09:04 - INFO - ENV variables ready
+08-05-2023 18:09:04 - INFO - Connected to DB
+08-05-2023 18:09:04 - INFO - Connected to DB
+08-05-2023 18:09:04 - WARNING -  * Debugger is active!
+08-05-2023 18:09:04 - INFO -  * Debugger PIN: 641-593-786
+08-05-2023 18:10:20 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\pcloudapis.py', reloading
+08-05-2023 18:10:20 - INFO -  * Restarting with stat
+08-05-2023 18:10:21 - INFO - ENV variables ready
+08-05-2023 18:10:21 - INFO - Connected to DB
+08-05-2023 18:10:21 - INFO - Connected to DB
+08-05-2023 18:10:21 - WARNING -  * Debugger is active!
+08-05-2023 18:10:21 - INFO -  * Debugger PIN: 641-593-786
+08-05-2023 18:12:37 - INFO -  * Detected change in 'C:\\Users\\rkantha\\Documents\\GitHub\\OG_ACEE_TASK_AUTOMATIOJN\\ACEE_task_automation\\backend\\helper2mod1.py', reloading
+08-05-2023 18:12:37 - INFO -  * Restarting with stat
+08-05-2023 18:12:38 - INFO - ENV variables ready
+08-05-2023 18:12:39 - INFO - Connected to DB
+08-05-2023 18:12:39 - INFO - Connected to DB
+08-05-2023 18:12:39 - WARNING -  * Debugger is active!
+08-05-2023 18:12:39 - INFO -  * Debugger PIN: 641-593-786

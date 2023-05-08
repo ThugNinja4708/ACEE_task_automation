@@ -1,28 +1,29 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask,request
 # import pCloudConsoleAPIs as pCloud
-import json
 from psycopg2 import Error
-import psycopg2
-import psycopg2.pool
 import os
 from datetime import datetime
 from db_conn_pool import getConnPool
 import time
 import logging
 from decouple import config
-from collections import OrderedDict
-import helper2
+import helper2mod1
 from user_class import REQUEST
-import asyncio
+
 import threading
 
 
 app = Flask(__name__)
-logging.basicConfig(level=logging.DEBUG)
 
-conn_pool = getConnPool()
+logging.basicConfig(level=logging.DEBUG, filename='app.log',
+                    format="%(asctime)s - %(levelname)s - %(message)s", datefmt='%d-%m-%Y %H:%M:%S')
+try :
+    conn_pool = getConnPool()
+except:
+    print("conn_pool_err")
 
-def upload_files(files):
+
+def upload_files(files) -> str:
     file_list = list()
     for file in files:
         file_name = f"{time.time_ns()}_{file.filename}"
@@ -32,7 +33,7 @@ def upload_files(files):
     return ",".join(file_list)
 
 @app.route("/getRequests", methods=["POST"]) 
-def getRequestsForClient() -> list() : 
+def getRequestsForClient() ->dict: 
     ############## REQUEST FORMDATA #################
     support_id = request.form['support_id']
     #################################################
@@ -53,33 +54,31 @@ def getRequestsForClient() -> list() :
         return {"err": f"Error occured while retrieving data from the database: {error}"}
     else:
         return {"response_data":list_of_tasks}
-    # Data Formatting 
-    # list_of_service_requests list()
-    # for row in rows:
-    #     service_request = {}
-    #     service_request['task_id'],service_request['customer_id'],service_request['task'], service_request['task_data'], service_request['status'], service_request['create_date'], service_request['complete_date'] = row
-    #     list_of_service_requests.append(service_request)
 
 @app.route("/insertIntoDatabase", methods=['POST'])
-def add_data() -> dict():
+def add_data() -> dict:
+    ############## REQUEST FORMDATA #################
     support_id = request.form['support_id']
     customer_id = request.form['customer_id']
     type_of_task = request.form['type_of_task']
-   # description = request.form['description']
+    description = request.form['description']
     created_date = str(datetime.now().date())
-
+    #################################################
     # if task == ipwhitelist add or remove
+    print("here1")
     if type_of_task in ['1', '2']:
-        task_data = request.form["task_data"]
+        task_data = request.form.get("task_data","")
+        print("here2")
 
     # task == ldap cert upload or psm cert
     elif type_of_task in ['3', '4']:
         task_data = upload_files(request.files.getlist('task_data'))
-
+        print("here2")
+    print("here3",task_data)
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
-                cursor.execute("INSERT INTO service_requests (customer_id, support_id, type_of_task, task_data, created_date,status) VALUES ((%s),(%s),(%s),(%s),(%s),'WAITING_FOR_APPROVAL');", (customer_id, support_id, type_of_task, task_data, created_date))
+                cursor.execute("INSERT INTO service_requests (customer_id, support_id, type_of_task, task_data, description, created_date, status) VALUES ((%s),(%s),(%s),(%s),(%s),(%s),'WAITING_FOR_APPROVAL');", (customer_id, support_id, type_of_task, task_data,description, created_date))
                 conn.commit()
         logging.info("API: /insertIntoDatabase MSG: Data added successfully")
         return {"msg": "Data added successfully"}
@@ -91,21 +90,12 @@ def add_data() -> dict():
 
 @app.route('/approveRequest', methods=['POST'])
 def approveRequest():
-
-    # cid = request.form['customer_id']
-    # tid = request.form['task_id']
-    # task = REQUEST(type_of_task=1, task_data="10.10.10.10", support_id=1,
-    # customer_id=cid, task_id=tid, status="WAITING_FOR_APPROVAL")
-    # task.approval_date = str(datetime.now().date())
-    # task.created_date = str(datetime.now().date())
   
-
     ############## REQUEST FORMDATA #################
     task_id = request.form['task_id']
     approval_date = str(datetime.now().date())
-    # task_data = request.form['task_data']
-    # list_task_id = [(x,) for x in list_task_id]
     #################################################
+    print("here4",task_id)
     try:
         with conn_pool.getconn() as conn:
             with conn.cursor() as cursor:
@@ -115,7 +105,8 @@ def approveRequest():
                 cursor.execute(queryToGetRequest,(task_id,))
                 conn.commit()
                 row = cursor.fetchone()
-        helper2.queueing(REQUEST(*row)) # REQUEST object
+                print("here9",row)
+        helper2mod1.queueing(REQUEST(*row)) # REQUEST object
         logging.info("API: /approveRequest MSG: Data recevied from DB Successfully.!" )
         return {"msg": "Approved..!"}
     except (Exception, Error) as error:
@@ -151,16 +142,19 @@ def verifyLogin():
         return {"isFound": False}
 
 
-
-# def start_get_status():
-#     loop = asyncio.new_event_loop()
-#     asyncio.set_event_loop(loop)
-#     loop.run_until_complete(helper2.get_status())
-#     print("hi")
+def statuscheck():
+    while True:
+        helper2mod1.get_status()
+        time.sleep(60)
 
 
-if __name__ == '__main__':
-    get_status_thread = threading.Thread(target=helper2.get_status)
-    get_status_thread.start()
-    # get_status_thread.join()
-    app.run(debug=True, port=5000, host="127.0.0.1")
+status_check_thread = threading.Thread(target=statuscheck, name="status check", daemon=True)
+status_check_thread.start()
+
+
+app.run(debug=True)
+# if __name__ == '__main__':
+#     get_status_thread = threading.Thread(target=start_get_status)
+#     get_status_thread.start()
+#     # get_status_thread.join()
+#     app.run(debug=True, port=5000, host="127.0.0.1")
